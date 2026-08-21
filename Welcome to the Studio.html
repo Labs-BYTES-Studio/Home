@@ -405,17 +405,22 @@ a:hover {
     inset: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
+    z-index: 0;
     overflow: hidden;
     background: #F5F4F0;
     pointer-events: none;
-  }
+}
 
-  #bytes-dither-canvas {
+#bytes-dither-canvas {
     display: block;
     width: 100%;
     height: 100%;
-  }
+}
+
+body > *:not(.dither-background) {
+    position: relative;
+    z-index: 1;
+}
 </style>
 
 <script>
