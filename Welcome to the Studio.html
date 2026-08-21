@@ -10,52 +10,54 @@
 <script id="tailwind-config">
 tailwind.config = {
   darkMode: "class",
+
   theme: {
     extend: {
-      colors: {
 
+      colors: {
         /* ================================
            BYTES LABS — BRAND PALETTE
            ================================ */
 
-        "navy": "#112250",
-        "sapphire": "#3B507D",
-        "taupe": "#BEB7A7",
-        "champagne": "#E7E2CE",
-        "ivory": "#F5F4F0",
+        navy: "#112250",
+        sapphire: "#3B507D",
+        taupe: "#BEB7A7",
+        champagne: "#E7E2CE",
+        ivory: "#F5F4F0",
 
-        /* Semantic colors */
-        "primary": "#112250",
-        "primary-container": "#112250",
+        /* Semantic palette */
+        primary: "#112250",
+        "primary-container": "#3B507D",
         "on-primary": "#F5F4F0",
-        "on-primary-container": "#112250",
 
-        "secondary": "#3B507D",
+        secondary: "#3B507D",
         "secondary-container": "#E7E2CE",
-        "on-secondary": "#F5F4F0",
-        "on-secondary-container": "#112250",
+        "on-secondary": "#112250",
 
-        "tertiary": "#BEB7A7",
-        "tertiary-container": "#E7E2CE",
-        "on-tertiary": "#112250",
-        "on-tertiary-container": "#112250",
-
-        /* Surfaces */
-        "background": "#F5F4F0",
-        "surface": "#F5F4F0",
-        "surface-bright": "#F5F4F0",
-        "surface-container-lowest": "#FFFFFF",
-        "surface-container-low": "#F5F4F0",
+        surface: "#F5F4F0",
+        "surface-container-lowest": "#F5F4F0",
+        "surface-container-low": "#E7E2CE",
         "surface-container": "#E7E2CE",
-        "surface-container-high": "#E7E2CE",
+        "surface-container-high": "#BEB7A7",
         "surface-container-highest": "#BEB7A7",
-        "surface-variant": "#BEB7A7",
 
+        background: "#F5F4F0",
         "on-background": "#112250",
+
         "on-surface": "#112250",
         "on-surface-variant": "#3B507D",
 
-        /* Fixed colors */
+        outline: "#BEB7A7",
+        "outline-variant": "#BEB7A7",
+
+        /* Compatibility colors */
+        error: "#8B1E1E",
+        "on-error": "#F5F4F0",
+
+        tertiary: "#BEB7A7",
+        "on-tertiary": "#112250",
+
+        /* Fixed palette */
         "primary-fixed": "#E7E2CE",
         "primary-fixed-dim": "#BEB7A7",
         "on-primary-fixed": "#112250",
@@ -71,40 +73,35 @@ tailwind.config = {
         "on-tertiary-fixed": "#112250",
         "on-tertiary-fixed-variant": "#3B507D",
 
-        /* Utility */
-        "outline": "#3B507D",
-        "outline-variant": "#BEB7A7",
+        "surface-bright": "#F5F4F0",
         "surface-dim": "#BEB7A7",
-        "surface-tint": "#3B507D",
+        "surface-variant": "#E7E2CE",
 
         "inverse-surface": "#112250",
-        "inverse-primary": "#E7E2CE",
         "inverse-on-surface": "#F5F4F0",
-
-        /* Error */
-        "error": "#BA1A1A",
-        "error-container": "#FFDAD6",
-        "on-error": "#FFFFFF",
-        "on-error-container": "#93000A"
+        "inverse-primary": "#E7E2CE"
       },
 
-      "borderRadius": {
-        "DEFAULT": "0.25rem",
-        "lg": "0.5rem",
-        "xl": "0.75rem",
-        "full": "9999px"
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+        "4xl": "2rem",
+        full: "9999px"
       },
 
-      "spacing": {
-        "gutter": "24px",
+      spacing: {
+        gutter: "24px",
         "margin-desktop": "64px",
         "margin-mobile": "20px",
         "container-max": "1280px",
-        "unit": "8px",
+        unit: "8px",
         "section-gap": "160px"
       },
 
-      "fontFamily": {
+      fontFamily: {
         "display-xl": ["Space Grotesk"],
         "body-lg": ["Plus Jakarta Sans"],
         "headline-lg": ["Space Grotesk"],
@@ -114,78 +111,75 @@ tailwind.config = {
         "headline-lg-mobile": ["Space Grotesk"]
       },
 
-      "fontSize": {
+      fontSize: {
         "display-xl": [
           "72px",
           {
-            "lineHeight": "80px",
-            "letterSpacing": "-0.02em",
-            "fontWeight": "700"
+            lineHeight: "80px",
+            letterSpacing: "-0.02em",
+            fontWeight: "700"
           }
         ],
 
         "body-lg": [
           "18px",
           {
-            "lineHeight": "28px",
-            "fontWeight": "400"
+            lineHeight: "28px",
+            fontWeight: "400"
           }
         ],
 
         "headline-lg": [
           "48px",
           {
-            "lineHeight": "56px",
-            "letterSpacing": "-0.01em",
-            "fontWeight": "600"
+            lineHeight: "56px",
+            letterSpacing: "-0.01em",
+            fontWeight: "600"
           }
         ],
 
         "headline-md": [
           "32px",
           {
-            "lineHeight": "40px",
-            "fontWeight": "500"
+            lineHeight: "40px",
+            fontWeight: "500"
           }
         ],
 
         "label-sm": [
           "12px",
           {
-            "lineHeight": "16px",
-            "letterSpacing": "0.05em",
-            "fontWeight": "600"
+            lineHeight: "16px",
+            letterSpacing: "0.05em",
+            fontWeight: "600"
           }
         ],
 
         "body-md": [
           "16px",
           {
-            "lineHeight": "24px",
-            "fontWeight": "400"
+            lineHeight: "24px",
+            fontWeight: "400"
           }
         ],
 
         "headline-lg-mobile": [
           "32px",
           {
-            "lineHeight": "40px",
-            "fontWeight": "600"
+            lineHeight: "40px",
+            fontWeight: "600"
           }
         ]
       }
     }
   }
-}
+};
 </script>
 <style>
 :root {
     --scroll-pos: 0;
 
-    /* =================================
-       BYTES LABS BRAND COLORS
-       ================================= */
-
+    /* BYTES LABS BRAND COLORS */
     --navy: #112250;
     --sapphire: #3B507D;
     --taupe: #BEB7A7;
@@ -193,8 +187,12 @@ tailwind.config = {
     --ivory: #F5F4F0;
 }
 
+html {
+    background: var(--ivory);
+}
+
 body {
-    background-color: transparent;
+    background: transparent;
     color: var(--navy);
 }
 
@@ -203,37 +201,26 @@ body {
    ================================= */
 
 .glass-card {
-    background:
-        linear-gradient(
-            135deg,
-            rgba(245, 244, 240, 0.42),
-            rgba(231, 226, 206, 0.22)
-        );
-
+    background: rgba(245, 244, 240, 0.28);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 
-    border: 1px solid rgba(190, 183, 167, 0.45);
+    border: 1px solid rgba(231, 226, 206, 0.55);
 
     box-shadow:
-        0 20px 50px rgba(17, 34, 80, 0.08);
+        0 12px 40px rgba(17, 34, 80, 0.08);
 
     transition:
         all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-    background:
-        linear-gradient(
-            135deg,
-            rgba(245, 244, 240, 0.58),
-            rgba(231, 226, 206, 0.38)
-        );
+    background: rgba(231, 226, 206, 0.38);
 
-    border-color: rgba(59, 80, 125, 0.45);
+    border-color: #3B507D;
 
     box-shadow:
-        0 24px 55px rgba(17, 34, 80, 0.16);
+        0 20px 50px rgba(17, 34, 80, 0.16);
 }
 
 
@@ -407,515 +394,801 @@ a:hover {
     text-decoration-color: var(--taupe);
 }
 </style>
-<!-- STITCH_SHADER_START:ANIMATION_78 class="fixed inset-0 w-full h-full -z-10" -->
-<div class="fixed inset-0 w-full h-full -z-10" style="display:block;">
-<canvas id="shader-canvas-ANIMATION_78" style="display:block;width:100%;height:100%"></canvas>
+<!-- BYTES LABS DITHERED WAVES BACKGROUND -->
+<div class="dither-background">
+  <canvas id="bytes-dither-canvas"></canvas>
+</div>
+
+<style>
+  .dither-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    overflow: hidden;
+    background: #F5F4F0;
+    pointer-events: none;
+  }
+
+  #bytes-dither-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
 <script>
-(function() {
-  const canvas = document.getElementById('shader-canvas-ANIMATION_78');
+(function () {
 
-  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
-  // This fires on initial layout and whenever the element is resized.
-  function syncSize() {
-    const w = canvas.clientWidth  || 1280;
-    const h = canvas.clientHeight || 720;
-    if (canvas.width !== w || canvas.height !== h) {
-      canvas.width  = w;
-      canvas.height = h;
+  const canvas = document.getElementById("bytes-dither-canvas");
+
+  const gl =
+    canvas.getContext("webgl", {
+      antialias: false,
+      alpha: false
+    }) ||
+    canvas.getContext("experimental-webgl");
+
+  if (!gl) {
+    console.warn("WebGL is not supported.");
+    return;
+  }
+
+  /* =========================================================
+     BYTES LABS COLOR PALETTE
+
+     Navy       #112250
+     Sapphire   #3B507D
+     Taupe      #BEB7A7
+     Champagne  #E7E2CE
+     Ivory      #F5F4F0
+     ========================================================= */
+
+  const vertexShaderSource = `
+    attribute vec2 a_position;
+
+    void main() {
+      gl_Position = vec4(a_position, 0.0, 1.0);
     }
-  }
-  if (typeof ResizeObserver !== 'undefined') {
-    new ResizeObserver(syncSize).observe(canvas);
-  }
-  syncSize();
-
-  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-  if (!gl) return;
-  const vs = `attribute vec2 a_position;
-varying vec2 v_texCoord;
-void main() {
-  v_texCoord = a_position * 0.5 + 0.5;
-  gl_Position = vec4(a_position, 0.0, 1.0);
-}`;const fs = `precision highp float;
-
-uniform float u_time;
-uniform vec2 u_resolution;
-uniform vec2 u_mouse;
+  `;
 
 
-/* =========================================
-   BYTES LABS — BRAND PALETTE
+  const fragmentShaderSource = `
+    precision highp float;
 
-   Navy      #112250
-   Sapphire  #3B507D
-   Taupe     #BEB7A7
-   Champagne #E7E2CE
-   Ivory     #F5F4F0
-   ========================================= */
+    uniform vec2 u_resolution;
+    uniform float u_time;
+    uniform vec2 u_mouse;
 
-const vec3 colorNavy =
-    vec3(0.067, 0.133, 0.314);
+    /* ============================================
+       BYTES LABS PALETTE
+       ============================================ */
 
-const vec3 colorSapphire =
-    vec3(0.231, 0.314, 0.490);
+    const vec3 NAVY =
+      vec3(0.067, 0.133, 0.314);
 
-const vec3 colorTaupe =
-    vec3(0.745, 0.718, 0.655);
+    const vec3 SAPPHIRE =
+      vec3(0.231, 0.314, 0.490);
 
-const vec3 colorChampagne =
-    vec3(0.906, 0.886, 0.808);
+    const vec3 TAUPE =
+      vec3(0.745, 0.718, 0.655);
 
-const vec3 colorIvory =
-    vec3(0.961, 0.957, 0.941);
+    const vec3 CHAMPAGNE =
+      vec3(0.906, 0.886, 0.808);
+
+    const vec3 IVORY =
+      vec3(0.961, 0.957, 0.941);
 
 
-/* =========================================
-   SIMPLEX 3D NOISE
-   ========================================= */
+    /* ============================================
+       NOISE
+       ============================================ */
 
-vec3 mod289(vec3 x) {
-    return x -
-        floor(x * (1.0 / 289.0)) * 289.0;
-}
+    vec4 mod289(vec4 x) {
+      return x - floor(x * (1.0 / 289.0)) * 289.0;
+    }
 
-vec4 mod289(vec4 x) {
-    return x -
-        floor(x * (1.0 / 289.0)) * 289.0;
-}
+    vec4 permute(vec4 x) {
+      return mod289(((x * 34.0) + 1.0) * x);
+    }
 
-vec4 permute(vec4 x) {
-    return mod289(
-        ((x * 34.0) + 1.0) * x
-    );
-}
+    vec4 taylorInvSqrt(vec4 r) {
+      return 1.79284291400159 -
+             0.85373472095314 * r;
+    }
 
-vec4 taylorInvSqrt(vec4 r) {
-    return 1.79284291400159 -
-        0.85373472095314 * r;
-}
+    vec2 fade(vec2 t) {
+      return t * t * t *
+             (t * (t * 6.0 - 15.0) + 10.0);
+    }
 
-float snoise(vec3 v) {
 
-    const vec2 C =
-        vec2(1.0 / 6.0, 1.0 / 3.0);
+    float cnoise(vec2 P) {
 
-    const vec4 D =
-        vec4(0.0, 0.5, 1.0, 2.0);
+      vec4 Pi =
+        floor(P.xyxy) +
+        vec4(0.0, 0.0, 1.0, 1.0);
 
-    vec3 i =
-        floor(v + dot(v, C.yyy));
+      vec4 Pf =
+        fract(P.xyxy) -
+        vec4(0.0, 0.0, 1.0, 1.0);
 
-    vec3 x0 =
-        v - i + dot(i, C.xxx);
+      Pi = mod289(Pi);
 
-    vec3 g =
-        step(x0.yzx, x0.xyz);
+      vec4 ix = Pi.xzxz;
+      vec4 iy = Pi.yyww;
 
-    vec3 l =
-        1.0 - g;
+      vec4 fx = Pf.xzxz;
+      vec4 fy = Pf.yyww;
 
-    vec3 i1 =
-        min(g.xyz, l.zxy);
-
-    vec3 i2 =
-        max(g.xyz, l.zxy);
-
-    vec3 x1 =
-        x0 - i1 + C.xxx;
-
-    vec3 x2 =
-        x0 - i2 + C.yyy;
-
-    vec3 x3 =
-        x0 - D.yyy;
-
-    i = mod289(i);
-
-    vec4 p =
+      vec4 i =
         permute(
-            permute(
-                permute(
-                    i.z +
-                    vec4(
-                        0.0,
-                        i1.z,
-                        i2.z,
-                        1.0
-                    )
-                )
-                + i.y +
-                vec4(
-                    0.0,
-                    i1.y,
-                    i2.y,
-                    1.0
-                )
-            )
-            + i.x +
-            vec4(
-                0.0,
-                i1.x,
-                i2.x,
-                1.0
-            )
+          permute(ix) + iy
         );
 
-    float n_ =
-        0.142857142857;
+      vec4 gx =
+        fract(i * (1.0 / 41.0)) *
+        2.0 - 1.0;
 
-    vec3 ns =
-        n_ * D.wyz -
-        D.xzx;
+      vec4 gy =
+        abs(gx) - 0.5;
 
-    vec4 j =
-        p -
-        49.0 *
-        floor(
-            p * ns.z * ns.z
-        );
+      vec4 tx =
+        floor(gx + 0.5);
 
-    vec4 x_ =
-        floor(j * ns.z);
+      gx = gx - tx;
 
-    vec4 y_ =
-        floor(
-            j - 7.0 * x_
-        );
+      vec2 g00 =
+        vec2(gx.x, gy.x);
 
-    vec4 x =
-        x_ * ns.x +
-        ns.yyyy;
+      vec2 g10 =
+        vec2(gx.y, gy.y);
 
-    vec4 y =
-        y_ * ns.x +
-        ns.yyyy;
+      vec2 g01 =
+        vec2(gx.z, gy.z);
 
-    vec4 h =
-        1.0 -
-        abs(x) -
-        abs(y);
+      vec2 g11 =
+        vec2(gx.w, gy.w);
 
-    vec4 b0 =
-        vec4(
-            x.xy,
-            y.xy
-        );
-
-    vec4 b1 =
-        vec4(
-            x.zw,
-            y.zw
-        );
-
-    vec4 s0 =
-        floor(b0) * 2.0 +
-        1.0;
-
-    vec4 s1 =
-        floor(b1) * 2.0 +
-        1.0;
-
-    vec4 sh =
-        -step(
-            h,
-            vec4(0.0)
-        );
-
-    vec4 a0 =
-        b0.xzyw +
-        s0.xzyw *
-        sh.xxyy;
-
-    vec4 a1 =
-        b1.xzyw +
-        s1.xzyw *
-        sh.zzww;
-
-    vec3 p0 =
-        vec3(a0.xy, h.x);
-
-    vec3 p1 =
-        vec3(a0.zw, h.y);
-
-    vec3 p2 =
-        vec3(a1.xy, h.z);
-
-    vec3 p3 =
-        vec3(a1.zw, h.w);
-
-    vec4 norm =
+      vec4 norm =
         taylorInvSqrt(
-            vec4(
-                dot(p0, p0),
-                dot(p1, p1),
-                dot(p2, p2),
-                dot(p3, p3)
-            )
+          vec4(
+            dot(g00, g00),
+            dot(g01, g01),
+            dot(g10, g10),
+            dot(g11, g11)
+          )
         );
 
-    p0 *= norm.x;
-    p1 *= norm.y;
-    p2 *= norm.z;
-    p3 *= norm.w;
+      g00 *= norm.x;
+      g01 *= norm.y;
+      g10 *= norm.z;
+      g11 *= norm.w;
 
-    vec4 m =
-        max(
-            0.6 -
-            vec4(
-                dot(x0, x0),
-                dot(x1, x1),
-                dot(x2, x2),
-                dot(x3, x3)
-            ),
-            0.0
-        );
+      float n00 =
+        dot(g00, vec2(fx.x, fy.x));
 
-    m = m * m;
+      float n10 =
+        dot(g10, vec2(fx.y, fy.y));
 
-    return 42.0 *
-        dot(
-            m * m,
-            vec4(
-                dot(p0, x0),
-                dot(p1, x1),
-                dot(p2, x2),
-                dot(p3, x3)
-            )
-        );
-}
+      float n01 =
+        dot(g01, vec2(fx.z, fy.z));
 
+      float n11 =
+        dot(g11, vec2(fx.w, fy.w));
 
-/* =========================================
-   MAIN SHADER
-   ========================================= */
+      vec2 fade_xy =
+        fade(Pf.xy);
 
-varying vec2 v_texCoord;
-
-void main() {
-
-    vec2 uv = v_texCoord;
-
-    float time =
-        u_time * 0.22;
-
-
-    /* -------------------------------------
-       Multiple independent organic layers
-       ------------------------------------- */
-
-    float n1 =
-        snoise(
-            vec3(
-                uv * 1.8,
-                time * 0.55
-            )
-        ) * 0.5 + 0.5;
-
-    float n2 =
-        snoise(
-            vec3(
-                uv * 1.35 +
-                vec2(8.0),
-                time * 0.42
-            )
-        ) * 0.5 + 0.5;
-
-    float n3 =
-        snoise(
-            vec3(
-                uv * 1.05 -
-                vec2(4.0),
-                time * 0.30
-            )
-        ) * 0.5 + 0.5;
-
-
-    /* -------------------------------------
-       Start with Ivory
-       ------------------------------------- */
-
-    vec3 color =
-        colorIvory;
-
-
-    /* -------------------------------------
-       Navy — controlled dark presence
-       ------------------------------------- */
-
-    float navyMask =
-        smoothstep(
-            0.60,
-            0.88,
-            n1
-        );
-
-    color =
+      vec2 n_x =
         mix(
-            color,
-            colorNavy,
-            navyMask * 0.42
+          vec2(n00, n01),
+          vec2(n10, n11),
+          fade_xy.x
         );
 
-
-    /* -------------------------------------
-       Sapphire — secondary blue
-       ------------------------------------- */
-
-    float sapphireMask =
-        smoothstep(
-            0.50,
-            0.90,
-            n2
-        );
-
-    color =
+      return 2.3 *
         mix(
-            color,
-            colorSapphire,
-            sapphireMask * 0.28
+          n_x.x,
+          n_x.y,
+          fade_xy.y
         );
-
-
-    /* -------------------------------------
-       Warm Taupe — more visible
-       ------------------------------------- */
-
-    float taupeMask =
-        smoothstep(
-            0.35,
-            0.78,
-            n3
-        );
-
-    color =
-        mix(
-            color,
-            colorTaupe,
-            taupeMask * 0.38
-        );
-
-
-    /* -------------------------------------
-       Champagne — warm luminous areas
-       ------------------------------------- */
-
-    float champagneMask =
-        smoothstep(
-            0.55,
-            0.92,
-            n3
-        );
-
-    champagneMask *=
-        smoothstep(
-            0.15,
-            0.85,
-            uv.y
-        );
-
-    color =
-        mix(
-            color,
-            colorChampagne,
-            champagneMask * 0.34
-        );
-
-
-    /* -------------------------------------
-       Subtle warm center glow
-       ------------------------------------- */
-
-    vec2 center =
-        uv - vec2(0.5);
-
-    float glow =
-        exp(
-            -dot(center, center) * 2.8
-        );
-
-    color =
-        mix(
-            color,
-            colorChampagne,
-            glow * 0.10
-        );
-
-
-    /* -------------------------------------
-       Keep edges slightly deeper
-       ------------------------------------- */
-
-    float edge =
-        smoothstep(
-            0.0,
-            0.65,
-            length(
-                uv - vec2(0.5)
-            )
-        );
-
-    color =
-        mix(
-            color,
-            colorTaupe,
-            edge * 0.08
-        );
-
-
-    gl_FragColor =
-        vec4(
-            color,
-            1.0
-        );
-}`;
-  function cs(type, src) {
-    const s = gl.createShader(type);
-    gl.shaderSource(s, src);
-    gl.compileShader(s);
-    return s;
-  }
-  const prog = gl.createProgram();
-  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
-  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
-  gl.linkProgram(prog);
-  gl.useProgram(prog);
-  const buf = gl.createBuffer();
-  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
-  const pos = gl.getAttribLocation(prog, 'a_position');
-  gl.enableVertexAttribArray(pos);
-  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
-  const uTime = gl.getUniformLocation(prog, 'u_time');
-  const uRes = gl.getUniformLocation(prog, 'u_resolution');
-  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
-
-  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
-  // Shaders that need normalized coords should use: u_mouse / u_resolution.
-  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
-  window.addEventListener('mousemove', (event) => {
-    const rect = canvas.getBoundingClientRect();
-    if (rect.width && rect.height) {
-      const nx = (event.clientX - rect.left) / rect.width;
-      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
-      mouse.x = nx * canvas.width;
-      mouse.y = ny * canvas.height;
     }
-  });
 
-  function render(t) {
-    if (typeof ResizeObserver === 'undefined') syncSize();
-    gl.viewport(0, 0, canvas.width, canvas.height);
-    if (uTime) gl.uniform1f(uTime, t * 0.001);
-    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
-    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
-    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-    requestAnimationFrame(render);
+
+    /* ============================================
+       FBM WAVES
+       ============================================ */
+
+    float fbm(vec2 p) {
+
+      float value = 0.0;
+      float amplitude = 1.0;
+      float frequency = 2.5;
+
+      for (int i = 0; i < 4; i++) {
+
+        value +=
+          amplitude *
+          abs(cnoise(p));
+
+        p *= frequency;
+        amplitude *= 0.3;
+      }
+
+      return value;
+    }
+
+
+    float pattern(vec2 p) {
+
+      vec2 moving =
+        p - u_time * 0.035;
+
+      return fbm(
+        p + fbm(moving)
+      );
+    }
+
+
+    /* ============================================
+       8x8 BAYER DITHER MATRIX
+       ============================================ */
+
+    float bayer8(vec2 pixel) {
+
+      int x =
+        int(mod(pixel.x, 8.0));
+
+      int y =
+        int(mod(pixel.y, 8.0));
+
+      int index =
+        y * 8 + x;
+
+      float matrix[64];
+
+      matrix[0] = 0.0;
+      matrix[1] = 48.0;
+      matrix[2] = 12.0;
+      matrix[3] = 60.0;
+      matrix[4] = 3.0;
+      matrix[5] = 51.0;
+      matrix[6] = 15.0;
+      matrix[7] = 63.0;
+
+      matrix[8] = 32.0;
+      matrix[9] = 16.0;
+      matrix[10] = 44.0;
+      matrix[11] = 28.0;
+      matrix[12] = 35.0;
+      matrix[13] = 19.0;
+      matrix[14] = 47.0;
+      matrix[15] = 31.0;
+
+      matrix[16] = 8.0;
+      matrix[17] = 56.0;
+      matrix[18] = 4.0;
+      matrix[19] = 52.0;
+      matrix[20] = 11.0;
+      matrix[21] = 59.0;
+      matrix[22] = 7.0;
+      matrix[23] = 55.0;
+
+      matrix[24] = 40.0;
+      matrix[25] = 24.0;
+      matrix[26] = 36.0;
+      matrix[27] = 20.0;
+      matrix[28] = 43.0;
+      matrix[29] = 27.0;
+      matrix[30] = 39.0;
+      matrix[31] = 23.0;
+
+      matrix[32] = 2.0;
+      matrix[33] = 50.0;
+      matrix[34] = 14.0;
+      matrix[35] = 62.0;
+      matrix[36] = 1.0;
+      matrix[37] = 49.0;
+      matrix[38] = 13.0;
+      matrix[39] = 61.0;
+
+      matrix[40] = 34.0;
+      matrix[41] = 18.0;
+      matrix[42] = 46.0;
+      matrix[43] = 30.0;
+      matrix[44] = 33.0;
+      matrix[45] = 17.0;
+      matrix[46] = 45.0;
+      matrix[47] = 29.0;
+
+      matrix[48] = 10.0;
+      matrix[49] = 58.0;
+      matrix[50] = 6.0;
+      matrix[51] = 54.0;
+      matrix[52] = 9.0;
+      matrix[53] = 57.0;
+      matrix[54] = 5.0;
+      matrix[55] = 53.0;
+
+      matrix[56] = 42.0;
+      matrix[57] = 26.0;
+      matrix[58] = 38.0;
+      matrix[59] = 22.0;
+      matrix[60] = 41.0;
+      matrix[61] = 25.0;
+      matrix[62] = 37.0;
+      matrix[63] = 21.0;
+
+      return matrix[index] / 64.0;
+    }
+
+
+    /* ============================================
+       MAIN
+       ============================================ */
+
+    void main() {
+
+      vec2 pixel =
+        gl_FragCoord.xy;
+
+      vec2 uv =
+        pixel / u_resolution.xy;
+
+      /* Center coordinates */
+
+      vec2 centered =
+        uv - 0.5;
+
+      centered.x *=
+        u_resolution.x /
+        u_resolution.y;
+
+
+      /* ==========================================
+         MOUSE INTERACTION
+         ========================================== */
+
+      vec2 mouse =
+        u_mouse /
+        u_resolution.xy;
+
+      mouse.y =
+        1.0 - mouse.y;
+
+      vec2 mousePos =
+        mouse - 0.5;
+
+      mousePos.x *=
+        u_resolution.x /
+        u_resolution.y;
+
+      float mouseDistance =
+        length(
+          centered - mousePos
+        );
+
+      float mouseInfluence =
+        1.0 -
+        smoothstep(
+          0.0,
+          1.25,
+          mouseDistance
+        );
+
+
+      /* ==========================================
+         WAVE PATTERN
+         ========================================== */
+
+      float wave =
+        pattern(centered);
+
+      wave -=
+        mouseInfluence * 0.18;
+
+      wave =
+        clamp(
+          wave,
+          0.0,
+          1.0
+        );
+
+
+      /* ==========================================
+         FIVE-COLOR PALETTE
+         ========================================== */
+
+      vec3 color;
+
+
+      /* Ivory → Champagne */
+
+      if (wave < 0.20) {
+
+        float t =
+          smoothstep(
+            0.0,
+            0.20,
+            wave
+          );
+
+        color =
+          mix(
+            IVORY,
+            CHAMPAGNE,
+            t
+          );
+
+      }
+
+
+      /* Champagne → Taupe */
+
+      else if (wave < 0.42) {
+
+        float t =
+          smoothstep(
+            0.20,
+            0.42,
+            wave
+          );
+
+        color =
+          mix(
+            CHAMPAGNE,
+            TAUPE,
+            t
+          );
+
+      }
+
+
+      /* Taupe → Sapphire */
+
+      else if (wave < 0.68) {
+
+        float t =
+          smoothstep(
+            0.42,
+            0.68,
+            wave
+          );
+
+        color =
+          mix(
+            TAUPE,
+            SAPPHIRE,
+            t
+          );
+
+      }
+
+
+      /* Sapphire → Navy */
+
+      else {
+
+        float t =
+          smoothstep(
+            0.68,
+            1.0,
+            wave
+          );
+
+        color =
+          mix(
+            SAPPHIRE,
+            NAVY,
+            t
+          );
+      }
+
+
+      /* ==========================================
+         DITHER
+         ========================================== */
+
+      float threshold =
+        bayer8(pixel) - 0.5;
+
+      float ditherStrength =
+        0.045;
+
+      color +=
+        threshold *
+        ditherStrength;
+
+
+      color =
+        clamp(
+          color,
+          0.0,
+          1.0
+        );
+
+
+      gl_FragColor =
+        vec4(
+          color,
+          1.0
+        );
+    }
+  `;
+
+
+  /* =========================================================
+     SHADER COMPILATION
+     ========================================================= */
+
+  function createShader(type, source) {
+
+    const shader =
+      gl.createShader(type);
+
+    gl.shaderSource(
+      shader,
+      source
+    );
+
+    gl.compileShader(shader);
+
+    if (
+      !gl.getShaderParameter(
+        shader,
+        gl.COMPILE_STATUS
+      )
+    ) {
+
+      console.error(
+        gl.getShaderInfoLog(shader)
+      );
+
+      gl.deleteShader(shader);
+
+      return null;
+    }
+
+    return shader;
   }
-  render(0);
+
+
+  const vertexShader =
+    createShader(
+      gl.VERTEX_SHADER,
+      vertexShaderSource
+    );
+
+  const fragmentShader =
+    createShader(
+      gl.FRAGMENT_SHADER,
+      fragmentShaderSource
+    );
+
+
+  const program =
+    gl.createProgram();
+
+  gl.attachShader(
+    program,
+    vertexShader
+  );
+
+  gl.attachShader(
+    program,
+    fragmentShader
+  );
+
+  gl.linkProgram(program);
+
+
+  if (
+    !gl.getProgramParameter(
+      program,
+      gl.LINK_STATUS
+    )
+  ) {
+
+    console.error(
+      gl.getProgramInfoLog(program)
+    );
+
+    return;
+  }
+
+
+  gl.useProgram(program);
+
+
+  /* =========================================================
+     FULLSCREEN QUAD
+     ========================================================= */
+
+  const buffer =
+    gl.createBuffer();
+
+  gl.bindBuffer(
+    gl.ARRAY_BUFFER,
+    buffer
+  );
+
+  gl.bufferData(
+    gl.ARRAY_BUFFER,
+    new Float32Array([
+      -1, -1,
+       1, -1,
+      -1,  1,
+       1,  1
+    ]),
+    gl.STATIC_DRAW
+  );
+
+
+  const position =
+    gl.getAttribLocation(
+      program,
+      "a_position"
+    );
+
+  gl.enableVertexAttribArray(
+    position
+  );
+
+  gl.vertexAttribPointer(
+    position,
+    2,
+    gl.FLOAT,
+    false,
+    0,
+    0
+  );
+
+
+  /* =========================================================
+     UNIFORMS
+     ========================================================= */
+
+  const uResolution =
+    gl.getUniformLocation(
+      program,
+      "u_resolution"
+    );
+
+  const uTime =
+    gl.getUniformLocation(
+      program,
+      "u_time"
+    );
+
+  const uMouse =
+    gl.getUniformLocation(
+      program,
+      "u_mouse"
+    );
+
+
+  /* =========================================================
+     MOUSE
+     ========================================================= */
+
+  let mouseX = 0;
+  let mouseY = 0;
+
+  window.addEventListener(
+    "mousemove",
+    function (event) {
+
+      mouseX =
+        event.clientX;
+
+      mouseY =
+        event.clientY;
+    }
+  );
+
+
+  /* =========================================================
+     RESIZE
+     ========================================================= */
+
+  function resize() {
+
+    const dpr =
+      Math.min(
+        window.devicePixelRatio || 1,
+        2
+      );
+
+    const width =
+      Math.floor(
+        window.innerWidth * dpr
+      );
+
+    const height =
+      Math.floor(
+        window.innerHeight * dpr
+      );
+
+    if (
+      canvas.width !== width ||
+      canvas.height !== height
+    ) {
+
+      canvas.width =
+        width;
+
+      canvas.height =
+        height;
+    }
+  }
+
+
+  window.addEventListener(
+    "resize",
+    resize
+  );
+
+  resize();
+
+
+  /* =========================================================
+     RENDER LOOP
+     ========================================================= */
+
+  function render(time) {
+
+    resize();
+
+    gl.viewport(
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    );
+
+    gl.uniform2f(
+      uResolution,
+      canvas.width,
+      canvas.height
+    );
+
+    gl.uniform1f(
+      uTime,
+      time * 0.001
+    );
+
+    gl.uniform2f(
+      uMouse,
+      mouseX *
+        (canvas.width /
+         window.innerWidth),
+
+      mouseY *
+        (canvas.height /
+         window.innerHeight)
+    );
+
+    gl.drawArrays(
+      gl.TRIANGLE_STRIP,
+      0,
+      4
+    );
+
+    requestAnimationFrame(
+      render
+    );
+  }
+
+
+  requestAnimationFrame(
+    render
+  );
+
 })();
 </script>
-</div>
-<!-- STITCH_SHADER_END:ANIMATION_78 -->
+<!-- END BYTES LABS DITHERED WAVES BACKGROUND -->
 <!-- Navigation -->
 <nav class="fixed left-1/2 -translate-x-1/2 z-50 w-[calc(100%-40px)] max-w-container-max flex items-center justify-between backdrop-blur-xl rounded-2xl px-6 py-3 border border-white/20 transition-all duration-300 bg-white/10 shadow-2xl top-4" id="top-nav">
 <div class="flex items-center gap-4">
