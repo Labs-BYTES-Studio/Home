@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style="--scroll-pos: 1827.973876953125;"><head></head><body class="text-navy font-body-md overflow-x-hidden" data-mode="connect">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BYTES Labs | Engineering Excellence</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#444748",
+                    "tertiary-fixed": "#ffdcbe",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e4e3d7",
+                    "surface-tint": "#5f5e5e",
+                    "on-background": "#1b1c15",
+                    "tertiary": "#000000",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "tertiary-container": "#2a1704",
+                    "secondary-fixed-dim": "#e9c349",
+                    "background": "#fbfaee",
+                    "surface-container-high": "#e9e9dd",
+                    "on-tertiary-container": "#9c7e62",
+                    "secondary-fixed": "#ffe088",
+                    "on-surface": "#1b1c15",
+                    "error-container": "#ffdad6",
+                    "outline": "#747878",
+                    "primary-container": "#1c1b1b",
+                    "primary": "#000000",
+                    "outline-variant": "#c4c7c7",
+                    "surface-bright": "#fbfaee",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#474646",
+                    "surface-container-low": "#f5f4e8",
+                    "on-secondary-container": "#745c00",
+                    "secondary": "#735c00",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e4e3d7",
+                    "inverse-surface": "#303129",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-dim": "#dbdbcf",
+                    "on-secondary-fixed-variant": "#574500",
+                    "surface-container": "#efeee3",
+                    "inverse-primary": "#c8c6c5",
+                    "on-primary-container": "#858383",
+                    "on-error-container": "#93000a",
+                    "surface": "#fbfaee",
+                    "on-tertiary-fixed-variant": "#5a422a",
+                    "inverse-on-surface": "#f2f1e5",
+                    "tertiary-fixed-dim": "#e3c0a0",
+                    "secondary-container": "#fed65b",
+                    "on-tertiary-fixed": "#2a1704",
+                    "on-secondary-fixed": "#241a00",
+                    "navy": "#112250",
+                    "sapphire": "#3B507D",
+                    "champagne": "#E7E2CE",
+                    "taupe": "#BEB7A7",
+                    "ivory": "#F5F4F0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "section-gap": "160px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Space Grotesk"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Space Grotesk"],
+                    "headline-md": ["Space Grotesk"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "display-xl": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        :root {
+            --scroll-pos: 0;
+        }
+        
+        body {
+            background-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #3B507D;
+            box-shadow: 0 20px 40px -15px rgba(59, 80, 125, 0.2);
+        }
+
+        /* 3D Service Cards */
+        .card-container {
+            width: 100%;
+            perspective: 1000px;
+        }
+
+        .folder-card {
+            position: relative;
+            height: 420px;
+            width: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+        }
+
+        .folder-card:hover {
+            transform: rotateX(10deg) rotateY(-10deg);
+        }
+
+        .card-layer {
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            transform-origin: bottom;
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .layer-1 {
+            background: linear-gradient(135deg, #3B507D 0%, #112250 100%);
+            transform: translateZ(0px);
+            opacity: 0.2;
+        }
+
+        .layer-2 {
+            background: linear-gradient(135deg, #E7E2CE 0%, #3B507D 100%);
+            transform: translateZ(20px);
+            margin: 10px;
+            opacity: 0.4;
+        }
+
+        .layer-main {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transform: translateZ(40px);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .folder-card:hover .layer-2 { transform: translateZ(30px) translateY(-10px); }
+        .folder-card:hover .layer-main { transform: translateZ(60px) translateY(-20px); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+    </style>
+<!-- STITCH_SHADER_START:ANIMATION_78 class="fixed inset-0 w-full h-full -z-10" -->
+<div class="fixed inset-0 w-full h-full -z-10" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_78" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_78');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+// Navy-and-peach-toned palette
+const vec3 colorIvory = vec3(0.961, 0.957, 0.941);    // #F5F4F0 (Base)
+const vec3 colorNavy = vec3(0.067, 0.133, 0.314);     // #112250 (Primary Wave)
+const vec3 colorSapphire = vec3(0.231, 0.314, 0.490); // #3B507D (Secondary Wave)
+const vec3 colorTaupe = vec3(0.745, 0.718, 0.655);    // #BEB7A7 (Warm Undertone)
+const vec3 colorChampagne = vec3(0.906, 0.886, 0.808); // #E7E2CE (Light Accent)
+
+// Simplex 3D noise
+vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec4 permute(vec4 x) { return mod289(((x*34.0)+1.0)*x); }
+vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }
+
+float snoise(vec3 v) {
+  const vec2 C = vec2(1.0/6.0, 1.0/3.0);
+  const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);
+  vec3 i  = floor(v + dot(v, C.yyy));
+  vec3 x0 = v - i + dot(i, C.xxx);
+  vec3 g = step(x0.yzx, x0.xyz);
+  vec3 l = 1.0 - g;
+  vec3 i1 = min(g.xyz, l.zxy);
+  vec3 i2 = max(g.xyz, l.zxy);
+  vec3 x1 = x0 - i1 + C.xxx;
+  vec3 x2 = x0 - i2 + C.yyy;
+  vec3 x3 = x0 - D.yyy;
+  i = mod289(i);
+  vec4 p = permute(permute(permute(i.z + vec4(0.0, i1.z, i2.z, 1.0)) + i.y + vec4(0.0, i1.y, i2.y, 1.0)) + i.x + vec4(0.0, i1.x, i2.x, 1.0));
+  float n_ = 0.142857142857;
+  vec3 ns = n_ * D.wyz - D.xzx;
+  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
+  vec4 x_ = floor(j * ns.z);
+  vec4 y_ = floor(j - 7.0 * x_);
+  vec4 x = x_ *ns.x + ns.yyyy;
+  vec4 y = y_ *ns.x + ns.yyyy;
+  vec4 h = 1.0 - abs(x) - abs(y);
+  vec4 b0 = vec4(x.xy, y.xy);
+  vec4 b1 = vec4(x.zw, y.zw);
+  vec4 s0 = floor(b0)*2.0 + 1.0;
+  vec4 s1 = floor(b1)*2.0 + 1.0;
+  vec4 sh = -step(h, vec4(0.0));
+  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy;
+  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww;
+  vec3 p0 = vec3(a0.xy,h.x);
+  vec3 p1 = vec3(a0.zw,h.y);
+  vec3 p2 = vec3(a1.xy,h.z);
+  vec3 p3 = vec3(a1.zw,h.w);
+  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+  p0 *= norm.x; p1 *= norm.y; p2 *= norm.z; p3 *= norm.w;
+  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+  m = m * m;
+  return 42.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));
+}
+
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    // Increased time multiplier from 0.1 to 0.35 for noticeably faster animation
+    float time = u_time * 0.35;
+    
+    // Noise-driven wave layers with increased individual speeds
+    float n1 = snoise(vec3(uv * 2.0, time * 0.8)) * 0.5 + 0.5;
+    float n2 = snoise(vec3(uv * 1.5 + vec2(10.0), time * 0.6)) * 0.5 + 0.5;
+    float n3 = snoise(vec3(uv * 1.0 - vec2(5.0), time * 0.4)) * 0.5 + 0.5;
+    
+    // Blending logic
+    vec3 color = colorIvory;
+    
+    // Layer 1: Navy
+    float mask1 = pow(smoothstep(0.3, 0.8, n1), 2.0);
+    color = mix(color, colorNavy, mask1 * 0.7);
+    
+    // Layer 2: Sapphire
+    float mask2 = pow(smoothstep(0.4, 0.9, n2), 2.0);
+    color = mix(color, colorSapphire, mask2 * 0.5);
+    
+    // Layer 3: Warm tones (Taupe & Champagne)
+    float mask3 = smoothstep(0.2, 1.0, n3);
+    vec3 warmTone = mix(colorTaupe, colorChampagne, uv.y);
+    color = mix(color, warmTone, mask3 * 0.4);
+
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_78 -->
+<!-- Navigation -->
+<nav class="fixed left-1/2 -translate-x-1/2 z-50 w-[calc(100%-40px)] max-w-container-max flex items-center justify-between backdrop-blur-xl rounded-2xl px-6 py-3 border border-white/20 transition-all duration-300 bg-white/10 shadow-2xl top-4" id="top-nav">
+<div class="flex items-center gap-4">
+<img alt="BYTES Labs Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNqRWtcWxbaKT9W0bDOiAVNh5x9opSy9DqCzganr1ez91eS_CUEtzL72ovClpv3mPu7E6piRgq8b9l1h3ib0yPa9_J7NlZ0upVVD1rMktf8xkxzEnsaskQm7_t4YoUkndv-dfF0fJ7f_SraQDSSucnXjBrT5ExksJ4CMCvrsDP_d8PcwW-trdVK-mGtjZqEuUxuIBqKjpPVshBuDaA59UQN5C87lUiboRx3HbaoOnzMQ4YT13aecAkR4xB8WwhwrtyTA"/>
+<span class="font-display-xl text-xl font-bold tracking-tight text-navy hidden sm:block">BYTES Labs</span>
+</div>
+<div class="hidden lg:flex gap-8 items-center">
+<a class="font-label-sm text-sapphire hover:text-navy transition-colors uppercase tracking-widest" href="#hero">Hero</a>
+<a class="font-label-sm text-sapphire hover:text-navy transition-colors uppercase tracking-widest" href="#about">About</a>
+<a class="font-label-sm text-sapphire hover:text-navy transition-colors uppercase tracking-widest" href="#services">Services</a>
+<a class="font-label-sm text-sapphire hover:text-navy transition-colors uppercase tracking-widest" href="#work">Our Previous Work</a>
+<a class="font-label-sm text-sapphire hover:text-navy transition-colors uppercase tracking-widest" href="#founders">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="min-h-screen flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop relative fade-in-up" id="hero">
+<div class="reveal active flex flex-col items-center max-w-4xl animate-bounce-in bg-white/10 backdrop-blur-md p-12 rounded-[40px] border border-white/20"><span class="font-label-sm uppercase tracking-widest text-sapphire mb-2"><br/></span>
+<span class="bg-champagne/50 text-navy px-4 py-1 rounded-full font-label-sm uppercase tracking-widest mb-8 border border-champagne">Engineering Excellence</span>
+<h1 class="font-display-xl text-display-xl md:text-[84px] leading-[1.1] mb-8 text-navy">Precision Engineering for <span class="text-sapphire">Digital Impact</span></h1>
+<p class="font-body-lg text-body-lg text-sapphire max-w-2xl leading-relaxed mb-12">
+            Helping local businesses establish a commanding identity through bespoke digital architecture and strategic market positioning.
+        </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-navy text-white px-10 py-5 rounded-xl font-label-sm uppercase tracking-widest hover:shadow-2xl hover:bg-sapphire hover:-translate-y-1 transition-all duration-300" href="#services">Browse Packages</a>
+<a class="glass-card px-10 py-5 rounded-xl font-label-sm uppercase tracking-widest text-navy transition-all" href="#contact">Consult with Us</a>
+</div><div class="mt-8 flex justify-center">
+<a class="font-label-sm uppercase tracking-widest text-sapphire hover:text-navy transition-colors flex items-center gap-2 group" href="#legal">
+    Terms of Service / Disclaimer
+    <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">arrow_outward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop relative fade-in-up" id="about">
+<div class="max-w-container-max mx-auto reveal active bg-white/10 backdrop-blur-md p-12 rounded-[40px] border border-white/20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-sapphire font-label-sm tracking-[0.2em] uppercase mb-6 block">Our Identity</span>
+<h2 class="font-headline-lg text-headline-lg mb-8 text-navy">We build more than sites; we build legacies.</h2>
+<p class="font-body-lg text-body-lg text-sapphire leading-relaxed mb-8">
+                    At BYTES Labs, we believe every local business deserves a world-class digital footprint. We are a trio of engineers with a passion for clean code and strategic growth.
+                </p>
+</div>
+<div class="relative">
+<div class="glass-card p-12 rounded-[40px] relative z-10">
+<p class="font-body-lg italic text-navy/80 leading-loose">
+                        "Our collaborative approach ensures that every pixel and every line of code serves a purpose: growing your business. We craft digital identities that resonate with your community and convert browsers into loyal customers."
+                    </p>
+<div class="mt-12 flex justify-center">
+<div class="glass-card p-4 rounded-2xl flex items-center gap-4 border-sapphire/30">
+<img alt="Small Logo" class="w-8 h-8 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNqRWtcWxbaKT9W0bDOiAVNh5x9opSy9DqCzganr1ez91eS_CUEtzL72ovClpv3mPu7E6piRgq8b9l1h3ib0yPa9_J7NlZ0upVVD1rMktf8xkxzEnsaskQm7_t4YoUkndv-dfF0fJ7f_SraQDSSucnXjBrT5ExksJ4CMCvrsDP_d8PcwW-trdVK-mGtjZqEuUxuIBqKjpPVshBuDaA59UQN5C87lUiboRx3HbaoOnzMQ4YT13aecAkR4xB8WwhwrtyTA"/>
+<span class="font-label-sm uppercase tracking-tighter opacity-60 text-navy">Boutique Engineering Agency</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-champagne/30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-sapphire/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop fade-in-up" id="services">
+<div class="max-w-container-max mx-auto bg-white/10 backdrop-blur-md p-12 rounded-[40px] border border-white/20">
+<div class="text-center mb-24 reveal active">
+<span class="text-sapphire font-label-sm tracking-[0.2em] uppercase mb-4 block">Core Competencies</span>
+<h2 class="font-headline-lg text-headline-lg text-navy">We Provide</h2>
+</div>
+<div class="grid gr
