@@ -224,16 +224,16 @@ body {
     }
     
     /* Interactive Folder Styles */
-    .folder-container {
-        perspective: 2000px;
-        position: relative;
-        width: 100%;
-        aspect-ratio: 3/4;
-        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-        transform-style: preserve-3d;
-        cursor: pointer;
-        margin-bottom: 2rem;
-    }
+.folder-container {
+    perspective: 2000px;
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
     
     .folder-container:hover {
         transform: translateY(-8px);
@@ -297,15 +297,17 @@ body {
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
     }
 
-    .folder-content {
-        z-index: 10;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 1px solid var(--tw-colors-outline-variant, #c5c6d0);
-        transform: translateZ(-10px) translateY(0);
-    }
+.folder-content {
+    z-index: 10;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid var(--tw-colors-outline-variant, #c5c6d0);
+    transform: translateZ(-10px) translateY(0);
+}
     
     .paper-bg-1 { z-index: 9; transform: translateZ(-11px) translateY(0); }
     .paper-bg-2 { z-index: 8; transform: translateZ(-12px) translateY(0); }
@@ -350,6 +352,41 @@ body {
 
 .tab-diamond {
     background: linear-gradient(to right, #DCEEFF, #C7E2F8, #AFCBE5);
+}
+
+/* Responsive pricing folders */
+@media (max-width: 1023px) {
+    .folder-container {
+        min-height: 440px;
+    }
+}
+
+@media (max-width: 767px) {
+    .folder-container {
+        min-height: 460px;
+    }
+
+    .folder-content {
+        padding: 1.25rem;
+    }
+
+    .folder-content h4 {
+        font-size: 1.125rem;
+    }
+
+    .folder-content ul {
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .folder-container {
+        min-height: 480px;
+    }
+
+    .folder-content {
+        padding: 1rem;
+    }
 }
 
 </style>
