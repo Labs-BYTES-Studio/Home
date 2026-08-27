@@ -185,6 +185,7 @@
             'slide-up-2': 'slideUp 0.6s ease-out 0.2s both',
             'slide-up-3': 'slideUp 0.6s ease-out 0.3s both',
             'slide-up-4': 'slideUp 0.6s ease-out 0.4s both',
+            'slide-up-5': 'slideUp 0.6s ease-out 0.5s both',
         }
       },
     },
@@ -343,17 +344,20 @@ body {
     .bg-platinum { background: linear-gradient(145deg, #112250, #0a1433); }
     .tab-platinum { background: linear-gradient(to right, #112250, #3B507D, #0a1433); }
 
+  .bg-diamond {
+    background: linear-gradient(145deg, #DCEEFF, #BFD9F2);
+}
+
+.tab-diamond {
+    background: linear-gradient(to right, #DCEEFF, #C7E2F8, #AFCBE5);
+}
+
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-on-primary" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
 <!-- Header -->
 <header class="flex items-center justify-between whitespace-nowrap border-b px-4 md:px-10 py-3 backdrop-blur-md sticky top-0 z-[60] rounded-xl mb-6 mx-4 md:mx-40 mt-5" style="background: rgba(245, 244, 240, 0.82); border-color: rgba(17, 34, 80, 0.10);">
 <div class="flex items-center gap-4 text-[#0f121a]">
-<div class="size-6 text-navy">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
-</svg>
-</div>
 <a class="font-headline-section-mobile text-2xl font-bold text-navy hover:opacity-80 transition-opacity duration-300" href="/">BYTES Labs</a>
 </div>
 <div class="hidden md:flex gap-6 items-center"><a class="font-label-eyebrow text-label-eyebrow text-primary hover:text-surface-tint transition-colors flex items-center gap-1" href="/"><span class="material-symbols-outlined text-sm">arrow_back</span> Back to Home</a>
@@ -388,6 +392,7 @@ body {
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Normal simple website</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Straightforward functionality</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Clean design</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> MAX 3 webpages + homepage</li>
 </ul>
 </div>
 <div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
@@ -414,6 +419,7 @@ body {
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Subtle animations</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Refined typography</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Essential engagement</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> MAX 5 webpages + homepage</li>
 </ul>
 </div>
 <div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
@@ -440,6 +446,7 @@ body {
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Enhanced visuals</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Complex animations</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Bespoke layouts</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> MAX 7 webpages + homepage</li>
 </ul>
 </div>
 <div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
@@ -466,6 +473,7 @@ body {
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Premium experience</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> WebGL effects</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Custom motion design</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> MAX 10 webpages + homepage</li>
 </ul>
 </div>
 <div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
@@ -477,6 +485,62 @@ body {
 <h3 class="text-ivory text-2xl font-bold font-display-hero italic">Platinum</h3>
 <p class="text-ivory/80 text-sm">Enterprise Bespoke</p>
 </div>
+</label>
+<!-- Diamond Tier -->
+<label class="folder-container animate-slide-up-5 block">
+    <input class="hidden" type="checkbox"/>
+    
+    <div class="folder-back bg-diamond"></div>
+    <div class="folder-tab tab-diamond"></div>
+    
+    <div class="paper-layer paper-bg-2"></div>
+    <div class="paper-layer paper-bg-1"></div>
+    
+    <div class="paper-layer folder-content">
+        <div>
+            <h4 class="text-navy text-xl font-bold mb-4 font-display-hero">
+                Diamond Package
+            </h4>
+            
+            <ul class="space-y-3 text-sapphire text-sm relative z-10">
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-xs">check_circle</span>
+                    Premium webpage design
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-xs">check_circle</span>
+                    No limit on number of pages
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-xs">check_circle</span>
+                    Bespoke visual experience
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-xs">check_circle</span>
+                    Advanced animations &amp; interactions
+                </li>
+            </ul>
+        </div>
+        
+        <div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
+            <p class="text-xl font-bold text-navy mb-3">
+                From ₹6,000
+            </p>
+            
+            <button class="w-full py-2 bg-navy text-ivory rounded-full font-bold text-sm hover:bg-sapphire transition-colors" type="button">
+                Book Package
+            </button>
+        </div>
+    </div>
+    
+    <div class="folder-cover bg-diamond flex flex-col justify-end p-6">
+        <h3 class="text-navy text-2xl font-bold font-display-hero italic">
+            Diamond
+        </h3>
+        <p class="text-navy/70 text-sm">
+            Premium Bespoke
+        </p>
+    </div>
 </label>
 </div>
 </section>
