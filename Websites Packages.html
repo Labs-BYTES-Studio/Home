@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing - BYTES Labs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "inverse-primary": "#b5c5fc",
+                "inverse-surface": "#303034",
+                "tertiary-fixed-dim": "#bfc7d4",
+                "on-error-container": "#93000a",
+                "tertiary-container": "#1e262f",
+                "on-surface": "#1b1b1f",
+                "on-primary-container": "#7b8abe",
+                "on-secondary-container": "#666353",
+                "on-surface-variant": "#45464f",
+                "on-secondary-fixed-variant": "#494738",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed": "#dbe1ff",
+                "on-tertiary": "#ffffff",
+                "surface": "#fbf8fd",
+                "on-tertiary-fixed": "#141c25",
+                "on-primary-fixed": "#051846",
+                "on-tertiary-fixed-variant": "#3f4752",
+                "surface-container-highest": "#e4e2e6",
+                "on-background": "#1b1b1f",
+                "surface-tint": "#4d5c8d",
+                "secondary-container": "#e5e0cc",
+                "secondary-fixed-dim": "#cbc7b3",
+                "outline-variant": "#c5c6d0",
+                "on-secondary-fixed": "#1d1c10",
+                "surface-container": "#efedf2",
+                "primary-fixed-dim": "#b5c5fc",
+                "on-primary": "#ffffff",
+                "surface-variant": "#e4e2e6",
+                "tertiary": "#09111a",
+                "background": "#fbf8fd",
+                "secondary-fixed": "#e8e3cf",
+                "tertiary-fixed": "#dbe3f0",
+                "on-error": "#ffffff",
+                "secondary": "#615f4f",
+                "on-primary-fixed-variant": "#354574",
+                "error-container": "#ffdad6",
+                "primary": "#000c33",
+                "surface-dim": "#dbd9de",
+                "surface-container-high": "#e9e7ec",
+                "on-tertiary-container": "#858d99",
+                "surface-container-low": "#f5f3f7",
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#f2f0f4",
+                "outline": "#757680",
+                "primary-container": "#112250",
+                "on-secondary": "#ffffff",
+                "surface-bright": "#fbf8fd"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "section-gap-mobile": "64px",
+                "margin": "24px",
+                "section-gap": "96px",
+                "gutter": "24px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-eyebrow": [
+                        "Plus Jakarta Sans"
+                ],
+                "display-hero": [
+                        "Playfair Display"
+                ],
+                "headline-section-mobile": [
+                        "Playfair Display"
+                ],
+                "headline-section": [
+                        "Playfair Display"
+                ],
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "display-hero-mobile": [
+                        "Playfair Display"
+                ]
+        },
+        "fontSize": {
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-eyebrow": [
+                        "13px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-hero": [
+                        "80px",
+                        {
+                                "lineHeight": "1.1",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-section-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-section": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-hero-mobile": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "400"
+                        }
+                ]
+        },
+        backgroundImage: {
+            'silk-gradient': 'linear-gradient(135deg, #000c33 0%, #112250 50%, #3B507D 100%)'
+        },
+        keyframes: {
+            slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' }
+            }
+        },
+        animation: {
+            'slide-up-1': 'slideUp 0.6s ease-out 0.1s both',
+            'slide-up-2': 'slideUp 0.6s ease-out 0.2s both',
+            'slide-up-3': 'slideUp 0.6s ease-out 0.3s both',
+            'slide-up-4': 'slideUp 0.6s ease-out 0.4s both',
+        }
+      },
+    },
+  }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-outlined.fill-icon {
+        font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+    }
+    
+    /* Interactive Folder Styles */
+    .folder-container {
+        perspective: 2000px;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 3/4;
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transform-style: preserve-3d;
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+    
+    .folder-container:hover {
+        transform: translateY(-8px);
+    }
+    
+    .folder-back {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        border-radius: 0 12px 12px 12px;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    }
+
+    .folder-cover {
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        transform-origin: bottom center;
+        transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        backface-visibility: hidden;
+        box-shadow: 10px 10px 25px rgba(0,0,0,0.1);
+        border-radius: 0 12px 12px 12px;
+        transform-style: preserve-3d;
+    }
+
+    /* Glossy reflective effect */
+    .folder-cover::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 100%);
+        pointer-events: none;
+        border-radius: inherit;
+        transition: opacity 0.8s ease;
+    }
+
+    .folder-container input:checked ~ .folder-cover::after {
+        opacity: 0.2; /* Glint shifts on open */
+    }
+
+    .folder-tab {
+        position: absolute;
+        top: -16px;
+        left: 0;
+        width: 40%;
+        height: 24px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        z-index: 4;
+        box-shadow: inset 0 2px 4px rgba(255,255,255,0.2);
+    }
+
+    .paper-layer {
+        position: absolute;
+        inset: 5%; /* 90% size relative to folder */
+        background: #fdfdfc;
+        border-radius: 8px;
+        transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        opacity: 0;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.05), inset 0 0 30px rgba(0,0,0,0.02); /* Soft ambient occlusion and texture hint */
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    }
+
+    .folder-content {
+        z-index: 10;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--tw-colors-outline-variant, #c5c6d0);
+        transform: translateZ(-10px) translateY(0);
+    }
+    
+    .paper-bg-1 { z-index: 9; transform: translateZ(-11px) translateY(0); }
+    .paper-bg-2 { z-index: 8; transform: translateZ(-12px) translateY(0); }
+
+    /* State: Open */
+    .folder-container input:checked ~ .folder-cover {
+        transform: rotateX(-110deg) rotateY(-5deg);
+    }
+
+    .folder-container input:checked ~ .folder-content {
+        transform: translateZ(40px) translateY(-35px) scale(1.02);
+        opacity: 1;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .folder-container input:checked ~ .paper-bg-1 {
+        transform: translateZ(25px) translateY(-22px) rotate(2deg) scale(0.98);
+        opacity: 0.95;
+    }
+    
+    .folder-container input:checked ~ .paper-bg-2 {
+        transform: translateZ(10px) translateY(-10px) rotate(-1.5deg) scale(0.96);
+        opacity: 0.85;
+    }
+
+    /* Colors with metallic refinements for tabs */
+    .bg-bronze { background: linear-gradient(145deg, #cd7f32, #a0522d); }
+    .tab-bronze { background: linear-gradient(to right, #cd7f32, #df9b5b, #a0522d); }
+    
+    .bg-silver { background: linear-gradient(145deg, #c0c0c0, #8e8e8e); }
+    .tab-silver { background: linear-gradient(to right, #c0c0c0, #e0e0e0, #8e8e8e); }
+    
+    .bg-gold { background: linear-gradient(145deg, #ffd700, #b8860b); }
+    .tab-gold { background: linear-gradient(to right, #ffd700, #ffeb73, #b8860b); }
+    
+    .bg-platinum { background: linear-gradient(145deg, #112250, #0a1433); }
+    .tab-platinum { background: linear-gradient(to right, #112250, #3B507D, #0a1433); }
+
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-on-primary" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9ebf2] px-4 md:px-10 py-3 bg-white/80 backdrop-blur-md sticky top-0 z-[60] rounded-xl mb-6 mx-4 md:mx-40 mt-5">
+<div class="flex items-center gap-4 text-[#0f121a]">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<a class="text-[#0f121a] text-lg font-bold leading-tight tracking-[-0.015em] font-display-hero" href="/">BYTES Labs</a>
+</div>
+<div class="hidden md:flex gap-6 items-center"><a class="font-label-eyebrow text-label-eyebrow text-primary hover:text-surface-tint transition-colors flex items-center gap-1" href="/"><span class="material-symbols-outlined text-sm">arrow_back</span> Back to Home</a>
+<a class="font-label-eyebrow text-label-eyebrow text-primary hover:text-surface-tint transition-colors" href="/work.html">Work</a>
+<a class="font-label-eyebrow text-label-eyebrow text-primary hover:text-surface-tint transition-colors" href="/pricing.html">Pricing</a>
+<a class="font-label-eyebrow text-label-eyebrow bg-primary text-on-primary px-5 py-2.5 rounded-full hover:bg-surface-tint transition-colors" href="/contact.html">Contact Us</a>
+</div>
+</header>
+<main class="pt-16 pb-section-gap overflow-x-hidden">
+<!-- Header Section -->
+<section class="max-w-container-max mx-auto px-gutter text-center mb-section-gap">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-eyebrow text-label-eyebrow mb-8">
+            Select Your Growth Package
+        </div>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6 italic">Scaling your digital impact</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">with precision-engineered solutions tailored to your ambition.</p>
+</section>
+<!-- Pricing Grid -->
+<section class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Bronze Tier -->
+<label class="folder-container animate-slide-up-1 block">
+<input class="hidden" type="checkbox"/>
+<div class="folder-back bg-bronze"></div>
+<div class="folder-tab tab-bronze"></div>
+<div class="paper-layer paper-bg-2"></div>
+<div class="paper-layer paper-bg-1"></div>
+<div class="paper-layer folder-content">
+<div>
+<h4 class="text-primary text-xl font-bold mb-4 font-display-hero">Bronze Package</h4>
+<ul class="space-y-3 text-on-surface-variant text-sm relative z-10">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Normal simple website</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Straightforward functionality</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Clean design</li>
+</ul>
+</div>
+<div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
+<p class="text-xl font-bold text-primary mb-3">From ₹2,000</p>
+<button class="w-full py-2 border border-primary text-primary rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-colors" type="button">Book Package</button>
+</div>
+</div>
+<div class="folder-cover bg-bronze flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display-hero italic">Bronze</h3>
+<p class="text-white/80 text-sm">Basic Experience</p>
+</div>
+</label>
+<!-- Silver Tier -->
+<label class="folder-container animate-slide-up-2 block">
+<input class="hidden" type="checkbox"/>
+<div class="folder-back bg-silver"></div>
+<div class="folder-tab tab-silver"></div>
+<div class="paper-layer paper-bg-2"></div>
+<div class="paper-layer paper-bg-1"></div>
+<div class="paper-layer folder-content">
+<div>
+<h4 class="text-primary text-xl font-bold mb-4 font-display-hero">Silver Package</h4>
+<ul class="space-y-3 text-on-surface-variant text-sm relative z-10">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Subtle animations</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Refined typography</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Essential engagement</li>
+</ul>
+</div>
+<div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
+<p class="text-xl font-bold text-primary mb-3">From ₹3,000</p>
+<button class="w-full py-2 border border-primary text-primary rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-colors" type="button">Book Package</button>
+</div>
+</div>
+<div class="folder-cover bg-silver flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display-hero italic">Silver</h3>
+<p class="text-white/80 text-sm">Standard Professional</p>
+</div>
+</label>
+<!-- Gold Tier -->
+<label class="folder-container animate-slide-up-3 block">
+<input class="hidden" type="checkbox"/>
+<div class="folder-back bg-gold"></div>
+<div class="folder-tab tab-gold"></div>
+<div class="paper-layer paper-bg-2"></div>
+<div class="paper-layer paper-bg-1"></div>
+<div class="paper-layer folder-content">
+<div>
+<h4 class="text-primary text-xl font-bold mb-4 font-display-hero">Gold Package</h4>
+<ul class="space-y-3 text-on-surface-variant text-sm relative z-10">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Enhanced visuals</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Complex animations</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Bespoke layouts</li>
+</ul>
+</div>
+<div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
+<p class="text-xl font-bold text-primary mb-3">From ₹4,000</p>
+<button class="w-full py-2 bg-primary text-white rounded-full font-bold text-sm hover:opacity-90 transition-opacity" type="button">Book Package</button>
+</div>
+</div>
+<div class="folder-cover bg-gold flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display-hero italic">Gold</h3>
+<p class="text-white/80 text-sm">Pro Standard</p>
+</div>
+</label>
+<!-- Platinum Tier -->
+<label class="folder-container animate-slide-up-4 block">
+<input class="hidden" type="checkbox"/>
+<div class="folder-back bg-platinum"></div>
+<div class="folder-tab tab-platinum"></div>
+<div class="paper-layer paper-bg-2"></div>
+<div class="paper-layer paper-bg-1"></div>
+<div class="paper-layer folder-content">
+<div>
+<h4 class="text-primary text-xl font-bold mb-4 font-display-hero">Platinum Package</h4>
+<ul class="space-y-3 text-on-surface-variant text-sm relative z-10">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Premium experience</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> WebGL effects</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Custom motion design</li>
+</ul>
+</div>
+<div class="mt-4 border-t pt-4 border-outline-variant relative z-10">
+<p class="text-xl font-bold text-primary mb-3">From ₹5,000</p>
+<button class="w-full py-2 bg-primary text-white rounded-full font-bold text-sm hover:opacity-90 transition-opacity" type="button">Book Package</button>
+</div>
+</div>
+<div class="folder-cover bg-platinum flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display-hero italic">Platinum</h3>
+<p class="text-white/80 text-sm">Enterprise Bespoke</p>
+</div>
+</label>
+</div>
+</section>
+<!-- Closing CTA -->
+<section class="mt-section-gap w-full bg-silk-gradient py-32 text-center shadow-inner">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-section text-headline-section text-on-primary mb-4 italic font-display-hero">Ready to scale?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-8 max-w-xl mx-auto">Let's engineer your digital future with precision and elegance.</p>
+<button class="py-4 px-8 rounded-full bg-on-primary text-primary hover:bg-surface hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 group font-label-eyebrow text-label-eyebrow shadow-lg">
+                Start the Conversation
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">arrow_outward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer Content -->
+<footer class="border-t border-surface-container-highest py-10 px-4 md:px-40 flex flex-col md:flex-row justify-between items-center gap-6 mt-12 bg-surface">
+<div class="flex items-center gap-3">
+<div class="size-5 text-on-surface-variant">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<p class="text-sm text-on-surface-variant">© 2024 BYTES Labs. Engineering Excellence &amp; Editorial Luxury.</p>
+</div>
+<div class="flex gap-8 text-sm font-medium text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Help Center</a>
+</div>
+</footer>
+</body></html>

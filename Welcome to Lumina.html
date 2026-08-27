@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMINA STUDIO | High-End Agency Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=Jetbrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {error: "#ffb4ab", "on-tertiary": "#3f008e", "on-secondary-fixed": "#2b0053", "on-background": "#e5e2e1", "surface-container-highest": "#353434", tertiary: "#d2bbff", secondary: "#dab9ff", "on-primary-container": "#7b7979", "on-secondary-container": "#d0a6ff", "surface-dim": "#141313", "tertiary-container": "#10002e", "on-primary-fixed": "#1c1b1b", "on-tertiary-fixed-variant": "#5a00c6", "secondary-container": "#6616b3", "surface-variant": "#353434", "tertiary-fixed": "#eaddff", "surface-bright": "#3a3939", "charcoal-deep": "#050505", "on-surface": "#e5e2e1", "primary-fixed-dim": "#c9c6c5", "sunset-orange": "#FF4D00", "tertiary-fixed-dim": "#d2bbff", "surface-container-low": "#1c1b1b", "on-secondary": "#470083", "primary-fixed": "#e5e2e1", "surface-container-high": "#2b2a2a", "on-secondary-fixed-variant": "#6411b0", "on-tertiary-fixed": "#25005a", "inverse-primary": "#5f5e5e", "surface-container-lowest": "#0e0e0e", primary: "#c9c6c5", "primary-container": "#0a0a0a", "on-error": "#690005", "inverse-surface": "#e5e2e1", "secondary-fixed-dim": "#dab9ff", "inverse-on-surface": "#313030", "on-tertiary-container": "#8f53ff", "electric-violet": "#7C3AED", "on-surface-variant": "#c4c7c7", "surface-container": "#201f1f", "glass-stroke": "rgba(255, 255, 255, 0.15)", surface: "#141313", "on-error-container": "#ffdad6", "error-container": "#93000a", "secondary-fixed": "#efdbff", "outline-variant": "#444748", "surface-tint": "#c9c6c5", background: "#141313", outline: "#8e9192", "on-primary": "#313030", "on-primary-fixed-variant": "#474646"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "32px", "margin-desktop": "80px", "margin-mobile": "24px", "section-gap": "160px", unit: "8px"}, fontFamily: {"body-md": ["JetBrains Mono"], "display-xl": ["Playfair Display"], "headline-lg": ["Playfair Display"], "body-lg": ["JetBrains Mono"], "headline-lg-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"], "label-caps": ["JetBrains Mono"], "display-xl-mobile": ["Playfair Display"], headline: ["Playfair Display"], display: ["Playfair Display"], body: ["Jetbrains Mono"], label: ["Jetbrains Mono"]}, fontSize: {"body-md": ["15px", {lineHeight: "24px", fontWeight: "400"}], "display-xl": ["96px", {lineHeight: "104px", letterSpacing: "-0.03em", fontWeight: "700"}], "headline-lg": ["64px", {lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "600"}], "body-lg": ["18px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "400"}], "headline-lg-mobile": ["40px", {lineHeight: "48px", fontWeight: "600"}], "headline-md": ["32px", {lineHeight: "40px", fontWeight: "500"}], "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.15em", fontWeight: "700"}], "display-xl-mobile": ["56px", {lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "700"}]}}}};</script>
+<style>
+        body { color: #ffffff; }
+        .spotlight-gradient { background: radial-gradient(circle at center, rgba(124,58,237,0.1) 0%, transparent 70%); }
+        
+        .container::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          animation:
+            after-anim-opacity 5s linear infinite,
+            weee 10s linear infinite;
+          background-repeat: repeat-y;
+          background-size:
+            50px 20px,
+            50px 20px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px;
+          background-position-x: 4px, 54px, calc(var(--w) * 1 + 4px),
+            calc(var(--w) * 1 + 54px), calc(var(--w) * 2 + 4px),
+            calc(var(--w) * 2 + 54px), calc(var(--w) * 3 + 4px),
+            calc(var(--w) * 3 + 54px), calc(var(--w) * 4 + 4px),
+            calc(var(--w) * 4 + 54px);
+          background-image: none, none,
+            linear-gradient(
+              45deg,
+              var(--c) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--c) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--c) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--c) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            none, none,
+            linear-gradient(
+              45deg,
+              var(--c) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--c) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--c) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--c) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            );
+        }
+
+        @keyframes after-anim-opacity {
+          5% {
+            opacity: 1;
+          }
+          0%,
+          4.99%,
+          20%,
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .container::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          animation:
+            before-anim-opacity 5s linear infinite,
+            before-anim-bg 5s step-start infinite,
+            weee 10s linear infinite;
+          background-repeat: repeat-y;
+          background-size:
+            50px 20px,
+            50px 20px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px;
+          background-position-x: 4px, 54px, calc(var(--w) * 1 + 4px),
+            calc(var(--w) * 1 + 54px), calc(var(--w) * 2 + 4px),
+            calc(var(--w) * 2 + 54px), calc(var(--w) * 3 + 4px),
+            calc(var(--w) * 3 + 54px), calc(var(--w) * 4 + 4px),
+            calc(var(--w) * 4 + 54px);
+        }
+
+        @keyframes before-anim-opacity {
+          0%,
+          10.4% {
+            opacity: 1;
+          }
+          9.9%,
+          10.3999%,
+          30%,
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @keyframes before-anim-bg {
+          0%,
+          9.9%,
+          99% {
+            background-image: none, none, none, none,
+              linear-gradient(
+                45deg,
+                var(--c) 0% 30.76923076923077%,
+                transparent 30.76923076923077% 61.53846153846154%,
+                var(--c) 61.53846153846154% 92.3076923076923%,
+                transparent 92.3076923076923%
+              ),
+              linear-gradient(
+                -45deg,
+                var(--c) 0% 30.76923076923077%,
+                transparent 30.76923076923077% 61.53846153846154%,
+                var(--c) 61.53846153846154% 92.3076923076923%,
+                transparent 92.3076923076923%
+              );
+          }
+          10%,
+          40% {
+            background-image: linear-gradient(
+                45deg,
+                var(--c) 0% 14.285714285714285%,
+                transparent 14.285714285714285% 28.57142857142857%,
+                var(--c) 28.57142857142857% 42.857142857142854%,
+                transparent 42.857142857142854% 57.14285714285714%,
+                var(--c) 57.14285714285714% 71.42857142857142%,
+                transparent 71.42857142857142% 85.71428571428571%,
+                var(--c) 85.71428571428571% 100%
+              ),
+              linear-gradient(
+                -45deg,
+                var(--c) 0% 14.285714285714285%,
+                transparent 14.285714285714285% 28.57142857142857%,
+                var(--c) 28.57142857142857% 42.857142857142854%,
+                transparent 42.857142857142854% 57.14285714285714%,
+                var(--c) 57.14285714285714% 71.42857142857142%,
+                transparent 71.42857142857142% 85.71428571428571%,
+                var(--c) 85.71428571428571% 100%
+              ),
+              none, none, none, none, none, none,
+              linear-gradient(
+                45deg,
+                var(--c) 0% 14.285714285714285%,
+                transparent 14.285714285714285% 28.57142857142857%,
+                var(--c) 28.57142857142857% 42.857142857142854%,
+                transparent 42.857142857142854% 57.14285714285714%,
+                var(--c) 57.14285714285714% 71.42857142857142%,
+                transparent 71.42857142857142% 85.71428571428571%,
+                var(--c) 85.71428571428571% 100%
+              ),
+              linear-gradient(
+                -45deg,
+                var(--c) 0% 14.285714285714285%,
+                transparent 14.285714285714285% 28.57142857142857%,
+                var(--c) 28.57142857142857% 42.857142857142854%,
+                transparent 42.857142857142854% 57.14285714285714%,
+                var(--c) 57.14285714285714% 71.42857142857142%,
+                transparent 71.42857142857142% 85.71428571428571%,
+                var(--c) 85.71428571428571% 100%
+              );
+          }
+        }
+
+        .container {
+          position: absolute !important;
+          outline: 40em solid var(--b);
+          width: calc(var(--w) * 5 + 4px) !important;
+          max-width: none !important;
+          height: 100%;
+          --l: #8825ec;
+          --b: #252a29;
+          --c: #fffdfd;
+          animation: weee 10s linear infinite;
+          background: var(--b);
+          background-image: linear-gradient(
+              45deg,
+              var(--l) 0% 14.285714285714285%,
+              transparent 14.285714285714285% 28.57142857142857%,
+              var(--l) 28.57142857142857% 42.857142857142854%,
+              transparent 42.857142857142854% 57.14285714285714%,
+              var(--l) 57.14285714285714% 71.42857142857142%,
+              transparent 71.42857142857142% 85.71428571428571%,
+              var(--l) 85.71428571428571% 100%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--l) 0% 14.285714285714285%,
+              transparent 14.285714285714285% 28.57142857142857%,
+              var(--l) 28.57142857142857% 42.857142857142854%,
+              transparent 42.857142857142854% 57.14285714285714%,
+              var(--l) 57.14285714285714% 71.42857142857142%,
+              transparent 71.42857142857142% 85.71428571428571%,
+              var(--l) 85.71428571428571% 100%
+            ),
+            linear-gradient(
+              45deg,
+              var(--l) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--l) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--l) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--l) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              45deg,
+              var(--l) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--l) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--l) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--l) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              45deg,
+              var(--l) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--l) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--l) 0% 30.76923076923077%,
+              transparent 30.76923076923077% 61.53846153846154%,
+              var(--l) 61.53846153846154% 92.3076923076923%,
+              transparent 92.3076923076923%
+            ),
+            linear-gradient(
+              45deg,
+              var(--l) 0% 14.285714285714285%,
+              transparent 14.285714285714285% 28.57142857142857%,
+              var(--l) 28.57142857142857% 42.857142857142854%,
+              transparent 42.857142857142854% 57.14285714285714%,
+              var(--l) 57.14285714285714% 71.42857142857142%,
+              transparent 71.42857142857142% 85.71428571428571%,
+              var(--l) 85.71428571428571% 100%
+            ),
+            linear-gradient(
+              -45deg,
+              var(--l) 0% 14.285714285714285%,
+              transparent 14.285714285714285% 28.57142857142857%,
+              var(--l) 28.57142857142857% 42.857142857142854%,
+              transparent 42.857142857142854% 57.14285714285714%,
+              var(--l) 57.14285714285714% 71.42857142857142%,
+              transparent 71.42857142857142% 85.71428571428571%,
+              var(--l) 85.71428571428571% 100%
+            );
+          background-size:
+            50px 20px,
+            50px 20px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px,
+            50px 80px;
+          --w: 104px;
+          background-position-x: 4px, 54px, calc(var(--w) * 1 + 4px),
+            calc(var(--w) * 1 + 54px), calc(var(--w) * 2 + 4px),
+            calc(var(--w) * 2 + 54px), calc(var(--w) * 3 + 4px),
+            calc(var(--w) * 3 + 54px), calc(var(--w) * 4 + 4px),
+            calc(var(--w) * 4 + 54px);
+          background-repeat: repeat-y;
+        }
+
+        @keyframes weee {
+          to {
+            background-position-y: 800px, 800px, 1040px, 1040px, 1360px, 1360px, 1040px,
+              1040px;
+          }
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen relative overflow-x-hidden selection:bg-white selection:text-black" style="background-color: #0f0a1a; --b: #0f0a1a;">
+<!-- Background Animation -->
+<div class="fixed inset-0 -z-50 pointer-events-none flex justify-center overflow-hidden bg-[#0f0a1a]"><div class="container" style="--b: #0f0a1a;"></div></div>
+<!-- Top Navigation (Shared Component JSON) -->
+<nav class="fixed top-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/10">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<div class="font-display-xl text-headline-md tracking-tighter text-white">LUMINA</div>
+<div class="hidden md:flex gap-8 items-center font-body-md text-body-md text-gray-300">
+<a class="hover:text-white transition-colors duration-300" href="#studio">Studio</a>
+<a class="text-white font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-2 after:h-0.5 after:bg-white" href="#work">Work</a>
+<a class="hover:text-white transition-colors duration-300" href="#process">Process</a>
+<a class="hover:text-white transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button class="hidden md:block bg-white text-black font-label-caps text-label-caps px-6 py-4 hover:bg-gray-200 transition-all duration-300">
+                START A PROJECT
+            </button>
+<button class="md:hidden text-white hover:text-gray-300 transition-all duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Demo Modal Overlay -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-[#0a0a0a]/90 backdrop-blur-lg px-margin-mobile" id="demo-modal">
+<div class="bg-[#141313]/80 backdrop-blur-xl border border-white/10 p-10 md:p-16 max-w-2xl w-full text-center relative spotlight-gradient shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+<div class="font-label-caps text-label-caps text-gray-400 mb-6 border border-white/10 inline-block px-4 py-2">BYTES LABS DEMO</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mb-8">Lumina Studio | Portfolio Package Demo</h2>
+<p class="font-body-lg text-body-lg text-gray-400 mb-10 max-w-lg mx-auto">
+                Welcome! This showcase demonstrates the premium Portfolio Website Package by BYTES Labs. This site is optimized for high-end creative studios and individual portfolios.
+            </p>
+<button class="bg-white text-black font-label-caps text-label-caps px-8 py-5 hover:bg-gray-200 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]" onclick="document.getElementById('demo-modal').style.display='none'">
+                ENTER SHOWCASE
+            </button>
+</div>
+</div>
+<!-- Section 1: Hero -->
+<header class="relative min-h-screen flex items-center pt-24 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto pt-section-gap">
+<div class="spotlight-gradient absolute inset-0 -z-10 pointer-events-none"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
+<div class="md:col-span-10 lg:col-span-8 flex flex-col items-start gap-8">
+<div class="font-label-caps text-label-caps text-gray-400 tracking-[0.2em] border border-white/10 px-4 py-2 uppercase bg-black/40 backdrop-blur-sm">Lumina Studio Series</div>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-white leading-tight">
+                    CRAFTING DIGITAL MASTERPIECES
+                </h1>
+<p class="font-body-lg text-body-lg text-gray-400 max-w-xl border-l border-white/10 pl-6 bg-black/40 backdrop-blur-sm p-4">
+                    Lumina Studio is the premium portfolio package by BYTES Labs, designed for creators who demand digital excellence.
+                </p>
+<div class="mt-8 flex flex-wrap gap-4">
+<a class="bg-white text-black font-label-caps text-label-caps px-8 py-5 hover:bg-gray-200 transition-all duration-300 shadow-lg" href="#work">
+                        EXPLORE OUR WORK
+                    </a>
+<a class="bg-black/60 backdrop-blur-md border border-white/20 text-white font-label-caps text-label-caps px-8 py-5 hover:border-white hover:bg-white/10 transition-all duration-300" href="#about">
+                        THE PHILOSOPHY
+                    </a>
+</div>
+</div>
+<div class="hidden lg:block lg:col-span-4 relative">
+<!-- Abstract geometry or brand mark placeholder -->
+<div class="absolute inset-0 border border-white/10 flex items-center justify-center opacity-50 bg-black/20 backdrop-blur-sm">
+<div class="w-32 h-32 border border-white/20 rotate-45 flex items-center justify-center">
+<div class="w-16 h-16 border border-white/40"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Section 2: The Studio (About) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto border-t border-white/10 bg-black/40 backdrop-blur-md mt-16" id="studio">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-md text-headline-md text-white mb-4">The Lumina Philosophy</h2>
+<div class="w-12 h-[1px] bg-white mb-8"></div>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div>
+<h3 class="font-label-caps text-label-caps text-white mb-4">BOUTIQUE EXPERIENCE</h3>
+<p class="font-body-md text-body-md text-gray-400">
+                        Every pixel is curated. We reject the generic in favor of a tailored, editorial approach that frames your work as high-art, treating the digital space as a premium gallery environment.
+                    </p>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-white mb-4">PRECISION ENGINEERING</h3>
+<p class="font-body-md text-body-md text-gray-400">
+                        Powered by BYTES Labs, our brutalist-minimalist fusion relies on robust structural integrity. High-contrast layering and exact typography create a sense of effortless authority.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Portfolio Preview (The Showcase) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto" id="work">
+<div class="flex justify-between items-end mb-16 bg-black/40 backdrop-blur-sm p-8 border border-white/10">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white">Select Works</h2>
+<a class="hidden md:inline-flex items-center gap-2 font-label-caps text-label-caps text-gray-300 hover:text-white transition-colors" href="#">
+                VIEW ALL <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Project 1 (Large) -->
+<div class="md:col-span-8 group relative block overflow-hidden border border-white/10 aspect-[4/3] md:aspect-auto bg-black">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant electric violet. The mood is serene yet technologically advanced." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnns3F9CxwJ0tkO7P-Ab776w9uyc40g_231hlL8QrZjuMfDALwMnCdgQyylb5OivUxXLCL4TrpUH8jBwhAPS_sRclx6MwSR0P2CM1YUueJzj-m6Xx1oE3eEFSzTzeR1jetcVpjkUB16ZBOCUoihwewFNdbsvGlXq808qFNdvBMfICiTiRSkGkzJYAtanf_cjMPRlU7Eftml0Kxx6iOjL11ss9e8QmnkWBWFau3R33X6LyMi9VLlNMk')"></div>
+<div class="absolute inset-0 bg-[#0a0a0a]/40 group-hover:bg-[#0a0a0a]/10 transition-colors duration-500"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-[#0a0a0a]/90 via-[#0a0a0a]/40 to-transparent">
+<div class="flex gap-2">
+<span class="border border-white/20 bg-black/50 px-3 py-1 font-label-caps text-label-caps text-white backdrop-blur-sm">BRANDING</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white">Ethereal Branding</h3>
+<p class="font-body-md text-body-md text-gray-300 mt-2">Identity &amp; Digital Experience</p>
+</div>
+</div>
+</div>
+<!-- Project 2 (Small Vertical) -->
+<div class="md:col-span-4 group relative block overflow-hidden border border-white/10 aspect-square md:aspect-auto bg-black">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="High-end fashion photography featuring a sleek, modern architectural backdrop. A model wears minimalist, avant-garde clothing in stark monochrome tones. Strong, directional lighting casts dramatic shadows, emphasizing texture and form. The scene uses a palette of deep charcoal and crisp white, with subtle hints of sunset orange reflecting off structural elements. The mood is sophisticated and uncompromising." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3i7azG9Ou5Hbmu-ht7k4FNuGp7lLwire-lHL6JIcVsKJ27kifNc-lievhtpt8qIM1P_MJsWSX-PdW_r8PD-Mf8W3Hxq0YcvlXTVMCicB-eC_y7l56UqsIJjsBm02zgeGDzMHxmvyMca7SHLOqIuitZVZw40bhVKEm80U1ZuxBS2vCoeXha0YrEreJW7CU6U_B4qdrnCfBBOdzdhvCNzOR9G1ZkBVyE7PLQ4MjQitfcXDEkrJyCoVq')"></div>
+<div class="absolute inset-0 bg-[#0a0a0a]/40 group-hover:bg-[#0a0a0a]/10 transition-colors duration-500"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-[#0a0a0a]/90 via-[#0a0a0a]/40 to-transparent">
+<div class="flex gap-2">
+<span class="border border-white/20 bg-black/50 px-3 py-1 font-label-caps text-label-caps text-white backdrop-blur-sm">UI/UX</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white text-xl">Fluid UI/UX</h3>
+</div>
+</div>
+</div>
+<!-- Project 3 (Small Horizontal) -->
+<div class="md:col-span-6 group relative block overflow-hidden border border-white/10 aspect-[16/9] bg-black">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Cinematic motion graphic still showing abstract, fluid liquid metal simulations morphing in slow motion. The metallic surfaces reflect stark, high-contrast studio lighting against a pitch-black background. The color grading relies entirely on deep shadows, blinding highlights, and striking electric violet accents bleeding through the reflections. The aesthetic is ultra-modern, premium, and technically flawless." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4H1ZL8JEDnEfAWaAfKse_k5gBxkCWnpDqARq8-XyAcZTGv2btzw06QWAQHRIhiZS9x3SC1isTNJc88CyfMEtMCCVNpCG5bvH1-BeG10VBjAk0siBOjU8tC6VlRPWZCYfhVj1OAVDUiH20WEQSAyUsMY8RR0QMLgfh4j3Bcz1Cjxrn5vsW1J_7nawiAW4e99T0DRqCPUEGoD1GdyzShPuWQhufSoYGNlaTQ06qrNY94DMn40_bxock')"></div>
+<div class="absolute inset-0 bg-[#0a0a0a]/40 group-hover:bg-[#0a0a0a]/10 transition-colors duration-500"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-[#0a0a0a]/90 via-[#0a0a0a]/40 to-transparent">
+<div class="flex gap-2">
+<span class="border border-white/20 bg-black/50 px-3 py-1 font-label-caps text-label-caps text-white backdrop-blur-sm">MOTION</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white text-xl">Cinematic Motion</h3>
+</div>
+</div>
+</div>
+<!-- CTA Card -->
+<div class="md:col-span-6 border border-white/10 aspect-[16/9] flex flex-col items-center justify-center p-8 bg-black/60 backdrop-blur-md hover:bg-black/80 transition-colors">
+<h3 class="font-headline-md text-headline-md text-white mb-6 text-center">View the Complete Archive</h3>
+<a class="bg-transparent border border-white/20 text-white font-label-caps text-label-caps px-6 py-4 hover:border-white hover:bg-white/10 transition-all duration-300" href="#">
+                    ENTER GALLERY
+                </a>
+</div>
+</div>
+</section>
+<!-- Section 5: Footer CTA -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center border-t border-white/10 relative overflow-hidden bg-black/40 backdrop-blur-md mt-16 mb-16 max-w-[1440px] mx-auto">
+<div class="spotlight-gradient absolute inset-0 -z-10 pointer-events-none opacity-50"></div>
+<h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-white mb-10 max-w-4xl mx-auto">READY TO RADIATE?</h2>
+<a class="inline-block bg-white text-black font-label-caps text-label-caps px-10 py-6 hover:bg-gray-200 transition-all duration-300 shadow-xl" href="#contact">
+            START A PROJECT
+        </a>
+</section>
+<!-- Footer (Shared Component JSON) -->
+<footer class="bg-[#0a0a0a]/90 backdrop-blur-xl border-t border-white/10 w-full pt-section-gap pb-10">
+<div class="max-w-[1440px] mx-auto px-margin-desktop flex flex-col gap-10">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="font-display-xl text-headline-lg text-white">LUMINA</div>
+<div class="flex flex-wrap gap-6 font-body-md text-body-md">
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="#">Studio</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="#">Work</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="#">Process</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-500 font-label-caps text-label-caps">
+<p>© 2024 LUMINA STUDIO. POWERED BY BYTES LABS.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="hover:text-white transition-colors" href="#">BYTES Labs Ecosystem</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
