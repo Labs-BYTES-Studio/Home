@@ -11,56 +11,74 @@
             theme: {
                 extend: {
                     "colors": {
-                        "primary": "#000c33",
-                        "on-tertiary-fixed": "#141c25",
-                        "on-surface-variant": "#45464f",
-                        "on-tertiary": "#ffffff",
-                        "secondary": "#615f4f",
-                        "primary-fixed": "#dbe1ff",
-                        "inverse-surface": "#303034",
-                        "surface-container-high": "#e9e7ec",
-                        "inverse-primary": "#b5c5fc",
-                        "error": "#ba1a1a",
-                        "surface-container-lowest": "#ffffff",
-                        "on-tertiary-fixed-variant": "#3f4752",
-                        "outline": "#757680",
-                        "on-surface": "#1b1b1f",
-                        "on-error-container": "#93000a",
-                        "surface-tint": "#4d5c8d",
-                        "secondary-container": "#e5e0cc",
-                        "tertiary-container": "#1e262f",
-                        "tertiary": "#09111a",
-                        "surface-container-highest": "#e4e2e6",
-                        "surface-variant": "#e4e2e6",
-                        "surface-container": "#efedf2",
-                        "secondary-fixed": "#e8e3cf",
-                        "background": "#fbf8fd",
-                        "on-secondary-fixed-variant": "#494738",
-                        "on-primary-fixed": "#051846",
-                        "error-container": "#ffdad6",
-                        "tertiary-fixed-dim": "#bfc7d4",
-                        "surface-bright": "#fbf8fd",
-                        "surface-container-low": "#f5f3f7",
-                        "on-primary-container": "#7b8abe",
-                        "secondary-fixed-dim": "#cbc7b3",
-                        "on-primary-fixed-variant": "#354574",
-                        "tertiary-fixed": "#dbe3f0",
-                        "inverse-on-surface": "#f2f0f4",
-                        "surface": "#fbf8fd",
-                        "on-secondary-fixed": "#1d1c10",
-                        "surface-dim": "#dbd9de",
-                        "on-tertiary-container": "#858d99",
-                        "on-error": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "on-background": "#1b1b1f",
-                        "outline-variant": "#c5c6d0",
-                        "on-secondary-container": "#666353",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#b5c5fc",
-                        "primary-container": "#112250",
-                        "sapphire": "#3B507D",
-                        "navy": "#112250"
-                    },
+    "primary": "#112250",
+    "primary-container": "#112250",
+    "primary-fixed": "#E7E2CE",
+    "primary-fixed-dim": "#BEB7A7",
+
+    "on-primary": "#F5F4F0",
+    "on-primary-fixed": "#112250",
+    "on-primary-fixed-variant": "#3B507D",
+    "on-primary-container": "#E7E2CE",
+
+    "secondary": "#BEB7A7",
+    "secondary-container": "#E7E2CE",
+    "secondary-fixed": "#E7E2CE",
+    "secondary-fixed-dim": "#BEB7A7",
+
+    "on-secondary": "#112250",
+    "on-secondary-container": "#112250",
+    "on-secondary-fixed": "#112250",
+    "on-secondary-fixed-variant": "#3B507D",
+
+    "tertiary": "#3B507D",
+    "tertiary-container": "#112250",
+    "tertiary-fixed": "#E7E2CE",
+    "tertiary-fixed-dim": "#BEB7A7",
+
+    "on-tertiary": "#F5F4F0",
+    "on-tertiary-container": "#E7E2CE",
+    "on-tertiary-fixed": "#112250",
+    "on-tertiary-fixed-variant": "#3B507D",
+
+    "background": "#E7E2CE",
+    "on-background": "#112250",
+
+    "surface": "#E7E2CE",
+    "surface-bright": "#F5F4F0",
+    "surface-dim": "#BEB7A7",
+
+    "surface-container-lowest": "#F5F4F0",
+    "surface-container-low": "#E7E2CE",
+    "surface-container": "#E7E2CE",
+    "surface-container-high": "#BEB7A7",
+    "surface-container-highest": "#BEB7A7",
+
+    "surface-variant": "#BEB7A7",
+
+    "on-surface": "#112250",
+    "on-surface-variant": "#3B507D",
+
+    "outline": "#3B507D",
+    "outline-variant": "#BEB7A7",
+
+    "inverse-surface": "#112250",
+    "inverse-on-surface": "#F5F4F0",
+    "inverse-primary": "#E7E2CE",
+
+    "error": "#8B2E2E",
+    "error-container": "#E8CFC9",
+    "on-error": "#F5F4F0",
+    "on-error-container": "#8B2E2E",
+
+    "surface-tint": "#3B507D",
+
+    "sapphire": "#3B507D",
+    "navy": "#112250",
+    "warm-taupe": "#BEB7A7",
+    "champagne": "#E7E2CE",
+    "ivory": "#F5F4F0"
+},
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
                         "lg": "0.5rem",
@@ -163,22 +181,194 @@
         }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
-        }
-        .silk-gradient {
-            background: linear-gradient(135deg, #112250 0%, #3B507D 100%);
-        }
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .animate-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 200,
+            'GRAD' 0,
+            'opsz' 24;
+    }
+
+    /* =========================================
+       BYTES LABS COLOR SYSTEM
+       ========================================= */
+
+    :root {
+        --navy: #112250;
+        --sapphire: #3B507D;
+        --warm-taupe: #BEB7A7;
+        --champagne: #E7E2CE;
+        --ivory: #F5F4F0;
+    }
+
+    /* =========================================
+       GRID BACKGROUND
+       Champagne base + Ivory grid
+       ========================================= */
+
+    .grid-wrapper {
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: var(--champagne);
+    }
+
+    .grid-background {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+
+        background-image:
+            linear-gradient(
+                to right,
+                rgba(245, 244, 240, 0.78) 1px,
+                transparent 1px
+            ),
+            linear-gradient(
+                to bottom,
+                rgba(245, 244, 240, 0.78) 1px,
+                transparent 1px
+            );
+
+        background-size: 20px 30px;
+
+        /* Soft navy/sapphire atmospheric glow */
+        -webkit-mask-image:
+            radial-gradient(
+                ellipse 70% 60% at 50% 0%,
+                #000 0%,
+                transparent 100%
+            );
+
+        mask-image:
+            radial-gradient(
+                ellipse 70% 60% at 50% 0%,
+                #000 0%,
+                transparent 100%
+            );
+    }
+
+    /* =========================================
+       MAIN PAGE BACKGROUND
+       ========================================= */
+
+    body {
+        background:
+            radial-gradient(
+                circle at 50% -10%,
+                rgba(59, 80, 125, 0.14),
+                transparent 42%
+            ),
+            var(--champagne);
+
+        color: var(--navy);
+    }
+
+    /* =========================================
+       NAVIGATION
+       ========================================= */
+
+    header {
+        background: rgba(245, 244, 240, 0.78) !important;
+        border-color: rgba(17, 34, 80, 0.10) !important;
+    }
+
+    /* =========================================
+       REPLACE WHITE TRANSLUCENT SURFACES
+       ========================================= */
+
+    .bg-white\/70 {
+        background-color: rgba(245, 244, 240, 0.72) !important;
+    }
+
+    .bg-white\/60 {
+        background-color: rgba(245, 244, 240, 0.62) !important;
+    }
+
+    .bg-white\/50 {
+        background-color: rgba(245, 244, 240, 0.52) !important;
+    }
+
+    .bg-white\/90 {
+        background-color: rgba(245, 244, 240, 0.92) !important;
+    }
+
+    .bg-white {
+        background-color: var(--ivory) !important;
+    }
+
+    /* =========================================
+       WARM TAUPE / IVORY BORDERS
+       ========================================= */
+
+    .border-white\/40 {
+        border-color: rgba(190, 183, 167, 0.55) !important;
+    }
+
+    .border-white\/50 {
+        border-color: rgba(190, 183, 167, 0.65) !important;
+    }
+
+    .border-white\/20 {
+        border-color: rgba(245, 244, 240, 0.22) !important;
+    }
+
+    /* =========================================
+       NAVY + SAPPHIRE GRADIENT
+       ========================================= */
+
+    .silk-gradient {
+        background:
+            radial-gradient(
+                circle at 15% 10%,
+                rgba(59, 80, 125, 0.65),
+                transparent 42%
+            ),
+            linear-gradient(
+                135deg,
+                #112250 0%,
+                #3B507D 55%,
+                #112250 100%
+            );
+    }
+
+    /* =========================================
+       SOFT NAVY / SAPPHIRE ATMOSPHERE
+       ========================================= */
+
+    .navy-glow {
+        box-shadow:
+            0 20px 60px rgba(17, 34, 80, 0.16),
+            0 4px 20px rgba(59, 80, 125, 0.10);
+    }
+
+    /* =========================================
+       SCROLL ANIMATION
+       ========================================= */
+
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+            opacity 0.8s ease-out,
+            transform 0.8s ease-out;
+    }
+
+    .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* =========================================
+       SELECTION
+       ========================================= */
+
+    ::selection {
+        background: var(--navy);
+        color: var(--ivory);
+    }
+</style>
 <script>
         document.addEventListener("DOMContentLoaded", () => {
             const observer = new IntersectionObserver((entries) => {
@@ -196,8 +386,10 @@
     </script>
 </head>
 <body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-primary-fixed-variant">
-<div class="fixed inset-0 bg-[#112250]/10 pointer-events-none z-0"></div>
-<div class="relative z-10">
+<div class="grid-wrapper">
+    <div class="grid-background"></div>
+
+    <div class="relative z-10">
 <!-- TopNavBar -->
 <header class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-white/20">
 <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
@@ -222,7 +414,7 @@
 <main>
 <!-- Hero Section -->
 <section class="relative min-h-[921px] flex flex-col items-center justify-center pt-32 pb-section-gap-mobile md:pb-section-gap overflow-hidden text-center px-gutter animate-on-scroll is-visible">
-<div class="max-w-4xl mx-auto flex flex-col items-center z-10 relative mt-16 bg-surface/70 backdrop-blur-md p-10 rounded-2xl border border-white/40 shadow-2xl">
+<div class="max-w-5xl mx-auto flex flex-col items-center z-10 relative mt-16 bg-ivory/72 backdrop-blur-xl p-10 md:p-14 rounded-3xl border border-warm-taupe/50 shadow-2xl">
 <span class="inline-block px-4 py-1.5 rounded-full border border-white/50 text-label-eyebrow font-label-eyebrow text-navy mb-8 bg-white/60 backdrop-blur-sm">
                     New — Now building for local brands
                 </span>
@@ -241,21 +433,13 @@
                     </button>
 </div>
 <div class="mt-auto pt-16 flex flex-col items-center gap-6 w-full border-t border-white/50">
-<p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-widest">Trusted by local businesses</p>
-<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-<span class="font-headline-section-mobile text-xl font-bold text-sapphire">Artisan Co.</span>
-<span class="font-headline-section-mobile text-xl font-bold text-sapphire">Velo Studios</span>
-<span class="font-headline-section-mobile text-xl font-bold text-sapphire">Lumina</span>
-<span class="font-headline-section-mobile text-xl font-bold text-sapphire">DataPulse</span>
-<span class="font-headline-section-mobile text-xl font-bold text-sapphire">Nexus</span>
-</div>
 </div>
 </div>
 </section>
 <!-- Our Identity -->
-<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-surface/70 backdrop-blur-md border-t border-white/20 animate-on-scroll is-visible">
+<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-champagne/70 backdrop-blur-md border-t border-navy/10 animate-on-scroll is-visible">
 <div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-12 items-center">
-<div class="bg-surface/70 backdrop-blur-md border border-white/40 p-8 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform">
+<div class="bg-ivory/80 backdrop-blur-md border border-warm-taupe/50 p-8 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform">
 <span class="font-label-eyebrow text-label-eyebrow text-sapphire uppercase tracking-widest mb-4 block">Our Identity</span>
 <h2 class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section text-navy mb-6 italic">
                         We build more than sites; we build legacies.
@@ -273,7 +457,7 @@
 </div>
 </section>
 <!-- Our Services -->
-<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-surface/70 backdrop-blur-md border-t border-white/20 animate-on-scroll is-visible">
+<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-champagne/70 backdrop-blur-md border-t border-navy/10 animate-on-scroll is-visible">
 <div class="max-w-container-max mx-auto">
 <span class="font-label-eyebrow text-label-eyebrow text-sapphire uppercase tracking-widest mb-4 block">Our Services</span>
 <h2 class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section text-navy mb-12 italic">
@@ -305,7 +489,7 @@
 </div>
 </section>
 <!-- Portfolio -->
-<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-surface/70 backdrop-blur-md border-t border-white/20 animate-on-scroll is-visible">
+<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-champagne/70 backdrop-blur-md border-t border-navy/10 animate-on-scroll is-visible">
 <div class="max-w-container-max mx-auto">
 <span class="font-label-eyebrow text-label-eyebrow text-sapphire uppercase tracking-widest mb-4 block">Portfolio</span>
 <h2 class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section text-navy mb-12 italic">
@@ -318,7 +502,7 @@
     <div class="absolute inset-0 bg-navy/20"></div>
   </div>
   <div class="relative z-10 h-full flex flex-col justify-end p-8">
-    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl border border-white/40 transition-all duration-300 group-hover:bg-white/90">
+    <div class="bg-ivory/85 backdrop-blur-md p-6 rounded-xl border border-warm-taupe/50 transition-all duration-300 group-hover:bg-white/90">
       <h3 class="text-2xl font-bold text-navy mb-2">Artisan Bistro</h3>
       <p class="text-on-surface-variant font-body-md text-sm mb-4">A sophisticated dining experience deserves an equally elegant digital presence.</p>
       <span class="inline-flex items-center gap-2 text-sapphire font-bold text-sm uppercase tracking-wider">View Demo <span class="material-symbols-outlined text-sm">arrow_outward</span></span>
@@ -331,7 +515,7 @@
     <div class="absolute inset-0 bg-navy/20"></div>
   </div>
   <div class="relative z-10 h-full flex flex-col justify-end p-8">
-    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl border border-white/40 transition-all duration-300 group-hover:bg-white/90">
+    <div class="bg-ivory/85 backdrop-blur-md p-6 rounded-xl border border-warm-taupe/50 transition-all duration-300 group-hover:bg-white/90">
       <h3 class="text-2xl font-bold text-navy mb-2">Velo Gear Shop</h3>
       <p class="text-on-surface-variant font-body-md text-sm mb-4">High-performance e-commerce platform for premium cycling equipment.</p>
       <span class="inline-flex items-center gap-2 text-sapphire font-bold text-sm uppercase tracking-wider">View Demo <span class="material-symbols-outlined text-sm">arrow_outward</span></span>
@@ -344,7 +528,7 @@
     <div class="absolute inset-0 bg-navy/20"></div>
   </div>
   <div class="relative z-10 h-full flex flex-col justify-end p-8">
-    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl border border-white/40 transition-all duration-300 group-hover:bg-white/90">
+    <div class="bg-ivory/85 backdrop-blur-md p-6 rounded-xl border border-warm-taupe/50 transition-all duration-300 group-hover:bg-white/90">
       <h3 class="text-2xl font-bold text-navy mb-2">Lumina Studio</h3>
       <p class="text-on-surface-variant font-body-md text-sm mb-4">Minimalist portfolio for a modern photography and design agency.</p>
       <span class="inline-flex items-center gap-2 text-sapphire font-bold text-sm uppercase tracking-wider">View Demo <span class="material-symbols-outlined text-sm">arrow_outward</span></span>
@@ -357,7 +541,7 @@
     <div class="absolute inset-0 bg-navy/20"></div>
   </div>
   <div class="relative z-10 h-full flex flex-col justify-end p-8">
-    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl border border-white/40 transition-all duration-300 group-hover:bg-white/90">
+    <div class="bg-ivory/85 backdrop-blur-md p-6 rounded-xl border border-warm-taupe/50 transition-all duration-300 group-hover:bg-white/90">
       <h3 class="text-2xl font-bold text-navy mb-2">DataPulse Analytics</h3>
       <p class="text-on-surface-variant font-body-md text-sm mb-4">A clean, B2B SAAS marketing site focusing on data visualization.</p>
       <span class="inline-flex items-center gap-2 text-sapphire font-bold text-sm uppercase tracking-wider">View Demo <span class="material-symbols-outlined text-sm">arrow_outward</span></span>
@@ -368,24 +552,24 @@
 </div>
 </section>
 <!-- The Founders -->
-<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-surface/70 backdrop-blur-md border-t border-white/20 animate-on-scroll is-visible">
+<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-champagne/70 backdrop-blur-md border-t border-navy/10 animate-on-scroll is-visible">
 <div class="max-w-container-max mx-auto text-center">
 <span class="font-label-eyebrow text-label-eyebrow text-sapphire uppercase tracking-widest mb-4 block">The Brain Trust</span>
 <h2 class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section text-navy mb-16 italic">
             The Founders
         </h2>
 <div class="grid md:grid-cols-3 gap-12 text-left">
-<div class="bg-surface/70 backdrop-blur-md border border-white/40 p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+<div class="bg-ivory/80 backdrop-blur-md border border-warm-taupe/50 p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform">
 <h3 class="text-2xl font-bold text-navy mb-1">Alex Rivers</h3>
 <p class="text-sapphire font-label-eyebrow text-label-eyebrow uppercase tracking-widest mb-4">Technical Lead</p>
 <p class="text-on-surface-variant font-body-md text-body-md">With over a decade of full-stack engineering experience, Alex leads the technical architecture.</p>
 </div>
-<div class="bg-surface/70 backdrop-blur-md border border-white/40 p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+<div class="bg-ivory/80 backdrop-blur-md border border-warm-taupe/50 p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform">
 <h3 class="text-2xl font-bold text-navy mb-1">Sarah Chen</h3>
 <p class="text-sapphire font-label-eyebrow text-label-eyebrow uppercase tracking-widest mb-4">Strategy Director</p>
 <p class="text-on-surface-variant font-body-md text-body-md">Sarah specializes in brand psychology and market positioning, transforming goals into strategies.</p>
 </div>
-<div class="bg-surface/70 backdrop-blur-md border border-white/40 p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+<div class="bg-ivory/80 backdrop-blur-md border border-warm-taupe/50 p-8 rounded-2xl shadow-lg hover:scale-105 transition-transform">
 <h3 class="text-2xl font-bold text-navy mb-1">Marcus Thorne</h3>
 <p class="text-sapphire font-label-eyebrow text-label-eyebrow uppercase tracking-widest mb-4">Marketing Head</p>
 <p class="text-on-surface-variant font-body-md text-body-md">Marcus ensures every campaign delivers tangible results for our clients.</p>
@@ -394,7 +578,7 @@
 </div>
 </section>
 <!-- Contact Us -->
-<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-surface/70 backdrop-blur-md border-t border-white/20 animate-on-scroll is-visible">
+<section class="py-section-gap-mobile md:py-section-gap px-gutter bg-champagne/70 backdrop-blur-md border-t border-navy/10 animate-on-scroll is-visible">
 <div class="max-w-4xl mx-auto silk-gradient rounded-3xl p-12 md:p-20 text-center flex flex-col items-center shadow-2xl border border-white/20 hover:scale-[1.02] transition-transform">
 <h2 class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section text-on-primary mb-10 italic">
             Let's Start a Conversation
@@ -434,7 +618,7 @@
 </div>
 </div>
 </footer>
+    </div>
 </div>
-
-
-</body></html>
+</body>
+</html>
