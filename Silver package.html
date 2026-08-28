@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Silver Package | BYTES Labs</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@200..300,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#1e262f",
+                        "on-background": "#1b1b1f",
+                        "on-secondary-container": "#666353",
+                        "primary-fixed-dim": "#b5c5fc",
+                        "on-primary-fixed-variant": "#354574",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed": "#e8e3cf",
+                        "on-primary-fixed": "#051846",
+                        "tertiary-fixed-dim": "#bfc7d4",
+                        "on-secondary-fixed": "#1d1c10",
+                        "secondary-container": "#e5e0cc",
+                        "inverse-primary": "#b5c5fc",
+                        "on-tertiary-fixed": "#141c25",
+                        "primary": "#000c33",
+                        "surface-container-low": "#f5f3f7",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#615f4f",
+                        "inverse-surface": "#303034",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1b1f",
+                        "surface": "#fbf8fd",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#dbe3f0",
+                        "surface-bright": "#fbf8fd",
+                        "outline-variant": "#c5c6d0",
+                        "surface-variant": "#e4e2e6",
+                        "tertiary": "#09111a",
+                        "outline": "#757680",
+                        "inverse-on-surface": "#f2f0f4",
+                        "surface-container-highest": "#e4e2e6",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#efedf2",
+                        "on-secondary-fixed-variant": "#494738",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#4d5c8d",
+                        "background": "#fbf8fd",
+                        "on-primary-container": "#7b8abe",
+                        "on-surface-variant": "#45464f",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3f4752",
+                        "surface-container-high": "#e9e7ec",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#858d99",
+                        "secondary-fixed-dim": "#cbc7b3",
+                        "primary-container": "#112250",
+                        "surface-dim": "#dbd9de"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "96px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "section-gap-mobile": "64px",
+                        "margin": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-section": ["Playfair Display"],
+                        "headline-section-mobile": ["Playfair Display"],
+                        "display-hero": ["Playfair Display"],
+                        "display-hero-mobile": ["Playfair Display"],
+                        "label-eyebrow": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-section": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "headline-section-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-hero": ["80px", { "lineHeight": "1.1", "fontWeight": "400" }],
+                        "display-hero-mobile": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "label-eyebrow": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom Styles for tactile feel and silk gradients */
+        body {
+            background-color: #fbf8fd; /* surface */
+        }
+        .silk-gradient-overlay {
+            background: linear-gradient(135deg, rgba(17, 34, 80, 0.03) 0%, rgba(117, 118, 128, 0.05) 100%);
+        }
+        .silver-accent {
+            color: #B5B5B5;
+        }
+        .bg-silver-accent {
+            background-color: #B5B5B5;
+        }
+        .border-silver-accent {
+            border-color: #B5B5B5;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface antialiased bg-surface min-h-screen flex flex-col relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md z-50 sticky top-4 mx-auto w-[95%] max-w-container-max rounded-full border border-outline/20 dark:border-outline-variant/10 shadow-sm transition-all duration-300 ease-in-out hover:scale-[1.02]">
+<div class="flex justify-between items-center px-8 py-3 w-full">
+<!-- Brand -->
+<a class="font-display-hero text-body-lg font-bold text-primary dark:text-primary-fixed" href="#">BYTES Labs</a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md uppercase tracking-wider">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Work</a>
+<a class="text-primary dark:text-primary-fixed font-semibold border-b border-primary dark:border-primary-fixed pb-1" href="#">Pricing</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact Us</a>
+</div>
+<!-- Trailing Action -->
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-primary bg-primary hover:bg-primary-container px-6 py-2 rounded-full transition-all flex items-center gap-2 group" href="#">
+                Hire Us
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'wght' 200;">arrow_outward</span>
+</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col pt-24 pb-section-gap w-full max-w-container-max mx-auto px-gutter relative z-10">
+<!-- Background Ambient Effect -->
+<div class="absolute inset-0 silk-gradient-overlay -z-10 pointer-events-none rounded-3xl mt-12 mx-gutter h-[80vh]"></div>
+<!-- Back Link -->
+<div class="mb-12">
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'wght' 200;">arrow_back</span>
+                Back to Pricing
+            </a>
+</div>
+<!-- Hero Section -->
+<header class="flex flex-col md:flex-row gap-16 md:gap-8 items-start justify-between mb-section-gap">
+<div class="flex-1 max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-widest block mb-4">Tier 02</span>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6">Silver Package</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">Refined. Engaging. Precise. A thoughtful step up in presentation and user engagement for growing brands.</p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+<div class="text-primary">
+<span class="block font-label-eyebrow text-label-eyebrow uppercase opacity-60 mb-1">Starting from</span>
+<span class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section">₹3,000</span>
+</div>
+<a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-body-md text-body-md px-8 py-4 rounded-full hover:bg-primary-container transition-colors group mt-2 sm:mt-0" href="#">
+                        Book Package
+                        <span class="material-symbols-outlined group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" style="font-variation-settings: 'wght' 200;">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<!-- Abstract Representation Image -->
+<div class="w-full aspect-square rounded-2xl border border-outline/20 bg-surface-container-lowest shadow-[0_4px_20px_rgba(17,34,80,0.05)] overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90" data-alt="A highly detailed, sophisticated conceptual flatlay representing web design and digital architecture. The scene features minimalist silver wireframes, elegant typographic layout grids on premium ivory paper, and delicate technical drafting tools arranged geometrically. The lighting is soft, natural, and high-key, casting very subtle, diffused shadows that emphasize texture. The color palette revolves around warm ivory, crisp white, deep navy blue (#000c33), and striking silver accents (#B5B5B5). The overall mood is precise, editorial, and luxuriously tactile, resembling a high-end architectural digest rather than typical tech graphics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2HeIAhZBGcCAoiCYCmxMTe3R3lMszygOL-eXV1o1HdovbVxPPuLpeD7yK_KzVw3XNuYlK993Pa1JU1GzPZJ8_LMxSFAd5JM7rPc0cLpN6ReOCvXeVJxXNbEzIL5PXSMYaknyLMleWkxXo4CnWggjAUlwri5y4PWuwE7QG3GQ5vOvsGgtYjtxjAWkvR197PLT6E-VgqRUXxeUrW4NAKw9naiMPP7VOAeyHKpBjBeZlv6OpkPi66GrZ"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-surface/40 to-transparent"></div>
+</div>
+</div>
+</header>
+<!-- Divider -->
+<hr class="border-t border-outline/20 w-full mb-section-gap"/>
+<!-- Details Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-section-gap">
+<!-- Who it's for -->
+<div class="col-span-1 md:col-span-5 bg-surface-container-lowest rounded-2xl border border-outline/20 p-8 shadow-[0_4px_20px_rgba(17,34,80,0.02)] hover:shadow-[0_4px_20px_rgba(17,34,80,0.05)] hover:border-outline/50 transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 200;">groups</span>
+</div>
+<h3 class="font-headline-section-mobile text-[24px] text-primary mb-4">Who it's for</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Designed for growing brands needing more content space and subtle motion to tell their story effectively and stand out in their market.</p>
+</div>
+<!-- What's Included -->
+<div class="col-span-1 md:col-span-7 bg-surface-container-lowest rounded-2xl border border-outline/20 p-8 shadow-[0_4px_20px_rgba(17,34,80,0.02)] hover:shadow-[0_4px_20px_rgba(17,34,80,0.05)] hover:border-outline/50 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-silver-accent opacity-5 rounded-bl-full pointer-events-none"></div>
+<h3 class="font-headline-section-mobile text-[24px] text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">layers</span>
+                    What's included
+                </h3>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-[18px]" style="font-variation-settings: 'wght' 200;">check</span>
+<span>Max 5 webpages + homepage crafting a comprehensive digital footprint.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-[18px]" style="font-variation-settings: 'wght' 200;">check</span>
+<span>Subtle animations and micro-interactions for an engaging feel.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-[18px]" style="font-variation-settings: 'wght' 200;">check</span>
+<span>Refined typography paired with high-end layout principles.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-[18px]" style="font-variation-settings: 'wght' 200;">check</span>
+<span>Essential engagement tools and lead capture forms integrated.</span>
+</li>
+</ul>
+</div>
+<!-- Capabilities -->
+<div class="col-span-1 md:col-span-12 bg-surface-container-low rounded-2xl border border-outline/20 p-8 md:p-12 shadow-[0_4px_20px_rgba(17,34,80,0.02)] hover:shadow-[0_4px_20px_rgba(17,34,80,0.05)] hover:border-outline/50 transition-all duration-300 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h3 class="font-headline-section-mobile text-[32px] text-primary mb-6">Technical Capabilities</h3>
+<div class="space-y-6">
+<div class="border-l-2 border-silver-accent pl-6">
+<h4 class="font-body-md text-[18px] font-semibold text-primary mb-2">Advanced Visual Hierarchy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Guiding user focus precisely where it matters through meticulous layout structuring.</p>
+</div>
+<div class="border-l-2 border-silver-accent pl-6">
+<h4 class="font-body-md text-[18px] font-semibold text-primary mb-2">Smooth Transitions</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Fluid state changes and page loads that elevate the perceived value of the brand.</p>
+</div>
+<div class="border-l-2 border-silver-accent pl-6">
+<h4 class="font-body-md text-[18px] font-semibold text-primary mb-2">Mobile-First Precision</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Flawless execution across devices without compromising the editorial aesthetic.</p>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full h-64 md:h-full min-h-[300px] rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover absolute inset-0" data-alt="A macro detail shot of a sophisticated digital interface displayed on a premium monitor, viewed from an oblique angle. The screen displays a minimalist layout with crisp typography, a subtle silver (#B5B5B5) accent line, and smooth, overlapping translucent layers. The surrounding environment is out of focus, featuring warm, inviting natural lighting that reflects softly off the matte screen. The color palette is dominated by deep navy blue (#000c33), soft ivory, and stark white, creating a highly tactile, editorial mood that speaks to engineering excellence and refined design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHAjxKXGCGcGf2MYJxcr9pbMZM9WSqdUn6OgBkx1_6i6AmtfPO-XG6WpwaMOJMPD4MlRDOisPlLRgIqtgn57kBRFDZ61x02-zIFwcfro2T_5-jWhADDD9xBcKBztaYOzAQ1tkHTVlvsN2MQ7UZFYdwmvNGTmVrQd8u9HTNTbQTl6V4FhJB74O8XEyiCkeNkYgfojcR8FNo1u5wPZnvVVD4MVO_swvU2qt3ymgeqn7Ra756I5Dl0wTa"/>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="text-center py-24 mb-12 flex flex-col items-center justify-center relative">
+<div class="absolute inset-0 bg-secondary-container/30 rounded-3xl -z-10"></div>
+<h2 class="font-headline-section-mobile md:font-headline-section text-headline-section-mobile md:text-headline-section text-primary mb-8 max-w-2xl mx-auto">Elevate your digital presence.</h2>
+<a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-body-md text-body-md px-10 py-5 rounded-full hover:bg-primary-container transition-transform hover:scale-105 duration-300 group" href="#">
+                Book Package
+                <span class="material-symbols-outlined group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" style="font-variation-settings: 'wght' 200;">arrow_outward</span>
+</a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-bright dark:bg-tertiary-container w-full pt-section-gap pb-12 border-t border-outline/10 dark:border-outline-variant/10 flat no shadows mt-auto">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-display-hero text-headline-section-mobile text-primary dark:text-tertiary-fixed">BYTES Labs</span>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container">© 2024 BYTES Labs. Engineering Excellence &amp; Editorial Luxury.</p>
+</div>
+<div class="flex flex-wrap gap-6 font-body-md text-body-md">
+<a class="text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed hover:opacity-80 transition-opacity transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed hover:opacity-80 transition-opacity transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed hover:opacity-80 transition-opacity transition-colors duration-200" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>

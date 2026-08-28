@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Diamond Package | BYTES Labs</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@200..300,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#1e262f",
+                    "on-background": "#1b1b1f",
+                    "on-secondary-container": "#666353",
+                    "primary-fixed-dim": "#b5c5fc",
+                    "on-primary-fixed-variant": "#354574",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed": "#e8e3cf",
+                    "on-primary-fixed": "#051846",
+                    "tertiary-fixed-dim": "#bfc7d4",
+                    "on-secondary-fixed": "#1d1c10",
+                    "secondary-container": "#e5e0cc",
+                    "inverse-primary": "#b5c5fc",
+                    "on-tertiary-fixed": "#141c25",
+                    "primary": "#000c33",
+                    "surface-container-low": "#f5f3f7",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#615f4f",
+                    "inverse-surface": "#303034",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1b1b1f",
+                    "surface": "#fbf8fd",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#dbe3f0",
+                    "surface-bright": "#fbf8fd",
+                    "outline-variant": "#c5c6d0",
+                    "surface-variant": "#e4e2e6",
+                    "tertiary": "#09111a",
+                    "outline": "#757680",
+                    "inverse-on-surface": "#f2f0f4",
+                    "surface-container-highest": "#e4e2e6",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#efedf2",
+                    "on-secondary-fixed-variant": "#494738",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4d5c8d",
+                    "background": "#fbf8fd",
+                    "on-primary-container": "#7b8abe",
+                    "on-surface-variant": "#45464f",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3f4752",
+                    "surface-container-high": "#e9e7ec",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#858d99",
+                    "secondary-fixed-dim": "#cbc7b3",
+                    "primary-container": "#112250",
+                    "surface-dim": "#dbd9de",
+                    
+                    /* Custom Accent for Diamond Package (Icy Pastel Blue) */
+                    "diamond-accent-light": "#E1F5FE",
+                    "diamond-accent": "#B3E5FC"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "96px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "section-gap-mobile": "64px",
+                    "margin": "24px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-section": [
+                            "Playfair Display"
+                    ],
+                    "headline-section-mobile": [
+                            "Playfair Display"
+                    ],
+                    "display-hero": [
+                            "Playfair Display"
+                    ],
+                    "display-hero-mobile": [
+                            "Playfair Display"
+                    ],
+                    "label-eyebrow": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-section": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-section-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-hero": [
+                            "80px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-hero-mobile": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-eyebrow": [
+                            "13px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Custom Styles for Warm Minimalism & Tactile Edge */
+        body {
+            background-color: theme('colors.secondary-fixed'); /* Champagne */
+            color: theme('colors.primary'); /* Navy */
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Silk Gradient for subtle accents */
+        .bg-silk-gradient {
+            background: linear-gradient(135deg, theme('colors.diamond-accent-light') 0%, theme('colors.diamond-accent') 100%);
+        }
+        
+        /* Premium Divider Hairline */
+        .border-hairline {
+            border-color: rgba(77, 92, 141, 0.2); /* surface-tint / Dusk Blue equivalent */
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md relative overflow-x-hidden selection:bg-diamond-accent selection:text-primary">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 pt-4">
+<nav class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md sticky top-4 mx-auto w-[95%] max-w-container-max rounded-full border border-outline/20 dark:border-outline-variant/10 shadow-sm flex justify-between items-center px-8 py-3 w-full">
+<a class="font-display-hero text-body-lg font-bold text-primary dark:text-primary-fixed" href="#">
+                BYTES Labs
+            </a>
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md uppercase tracking-wider" href="#">Work</a></li>
+<!-- Active Navigation mapping to "Pricing" intent -->
+<li><a class="text-primary dark:text-primary-fixed font-semibold border-b border-primary dark:border-primary-fixed font-body-md text-body-md uppercase tracking-wider" href="#">Pricing</a></li>
+<li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md uppercase tracking-wider" href="#">Contact Us</a></li>
+</ul>
+<button class="bg-primary text-on-primary hover:opacity-90 rounded-full px-6 py-2 transition-all duration-300 ease-in-out hover:scale-[1.02] font-body-md text-body-md uppercase tracking-wider flex items-center gap-2">
+                Hire Us
+                <span class="material-symbols-outlined" style="font-size: 16px;">arrow_outward</span>
+</button>
+</nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-section-gap w-full">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter pt-12 md:pt-24 pb-section-gap relative">
+<a class="inline-flex items-center gap-2 text-primary hover:opacity-70 transition-opacity mb-12 font-label-eyebrow text-label-eyebrow uppercase" href="#">
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span>
+                Back to Pricing
+            </a>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<p class="font-label-eyebrow text-label-eyebrow text-primary/70 mb-4 tracking-widest uppercase">The Ultimate Offering</p>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-6 leading-tight">
+                        Diamond<br/>Package
+                    </h1>
+<p class="font-body-lg text-body-lg text-primary/80 max-w-2xl border-l-2 border-hairline pl-6">
+                        Infinite. Bespoke. Ultimate. The definitive BYTES Labs offering with unlimited scale and maximum customization for enterprise-level visionaries.
+                    </p>
+</div>
+<div class="lg:col-span-4 bg-surface p-8 rounded-xl border border-hairline shadow-sm relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-diamond-accent-light rounded-full blur-3xl opacity-50"></div>
+<p class="text-sm text-primary/60 mb-2 uppercase tracking-wide">Starting from</p>
+<p class="font-headline-section text-headline-section text-primary mb-8">₹6,000</p>
+<button class="w-full bg-primary text-on-primary rounded-full px-6 py-4 flex justify-between items-center hover:bg-primary-container transition-colors duration-300">
+<span class="font-semibold uppercase tracking-wider text-sm">Book Package</span>
+<span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Details -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap relative">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Who it's for -->
+<div class="bg-surface rounded-xl p-8 border border-hairline flex flex-col justify-between group hover:border-diamond-accent transition-colors duration-500 lg:col-span-1 lg:row-span-1 relative overflow-hidden">
+<div class="absolute inset-0 bg-silk-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
+<div>
+<span class="material-symbols-outlined text-4xl text-primary/50 mb-6 group-hover:text-primary transition-colors">domain</span>
+<h3 class="font-headline-section-mobile text-headline-section-mobile text-primary mb-4">Who it's for</h3>
+</div>
+<p class="text-primary/70">Enterprise-level projects or complex brands requiring a comprehensive, limitless digital ecosystem.</p>
+</div>
+<!-- Image Accent -->
+<div class="bg-surface rounded-xl border border-hairline lg:col-span-2 lg:row-span-1 overflow-hidden relative" data-alt="A pristine, minimalist architectural interior featuring grand, sweeping curved walls painted in a soft, warm ivory. The space is bathed in natural, diffused daylight casting gentle shadows. In the center, a sculptural, modern art piece stands on a white pedestal. The overall aesthetic is extremely high-end, clean, and luxurious, emphasizing infinite space and scale. Accents of subtle cool blue light peek through a distant skylight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCq0jAU23PB05dtuXSwxDX9TPZbgIF4y9yDuZKhRg8PyXhFcWDoS1--tWHWNAoIGFZsbbLpbd6I7Ovd2LhDxnd9rNZIO5CLBkbeUIbGNWnu_wElvyanXhmi_OyqS1R_nB5WjG3TZ7UWtvVCWDimrFTQH-T-Na1DsL9TM4PIlfe8V7qNvIkW3wwUyXDldAVjLxy5I7gDZrto7xArVE_Fp7grFKF4RWGXaHQmtdLDshZ02qrkMxUkRCeH')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-surface">
+<p class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest mb-2 opacity-80">Capabilities</p>
+<p class="font-headline-section-mobile text-headline-section-mobile">Limitless Scale</p>
+</div>
+</div>
+<!-- What's included List -->
+<div class="bg-surface rounded-xl p-8 border border-hairline lg:col-span-3 lg:row-span-2 relative">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-silk-gradient opacity-10 blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl">
+<p class="font-label-eyebrow text-label-eyebrow text-primary/70 mb-4 tracking-widest uppercase">The Inventory</p>
+<h2 class="font-headline-section text-headline-section text-primary mb-12">What's Included</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 border-b border-hairline pb-6">
+<span class="material-symbols-outlined text-diamond-accent mt-1">all_inclusive</span>
+<div>
+<h4 class="font-semibold text-lg text-primary mb-1">NO LIMIT on Webpages</h4>
+<p class="text-primary/70">Expand your digital footprint infinitely. Perfect for sprawling content architectures and vast product catalogs.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 border-b border-hairline pb-6">
+<span class="material-symbols-outlined text-diamond-accent mt-1">diamond</span>
+<div>
+<h4 class="font-semibold text-lg text-primary mb-1">Premium Editorial Design</h4>
+<p class="text-primary/70">Highest level of visual customization, treating every pixel as a deliberate act of digital couture.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 border-b border-hairline pb-6">
+<span class="material-symbols-outlined text-diamond-accent mt-1">animation</span>
+<div>
+<h4 class="font-semibold text-lg text-primary mb-1">Bespoke Interactions</h4>
+<p class="text-primary/70">Custom-coded animations, fluid transitions, and tailored micro-interactions that elevate the tactile feel of the brand.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-diamond-accent mt-1">code_blocks</span>
+<div>
+<h4 class="font-semibold text-lg text-primary mb-1">Advanced Integration</h4>
+<p class="text-primary/70">Seamless technical handshakes with existing enterprise systems, CRM, and complex backend architectures.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap">
+<div class="bg-primary text-surface rounded-2xl p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-silk-gradient opacity-20 mix-blend-overlay"></div>
+<div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+<span class="material-symbols-outlined text-5xl text-diamond-accent mb-6">workspace_premium</span>
+<h2 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero mb-8">Build your digital legacy without limits.</h2>
+<button class="bg-surface text-primary rounded-full px-8 py-4 flex items-center gap-3 hover:bg-diamond-accent-light transition-colors duration-300">
+<span class="font-semibold uppercase tracking-wider">Book Package</span>
+<span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-bright dark:bg-tertiary-container w-full pt-section-gap pb-12 border-t border-outline/10 dark:border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="flex flex-col gap-4 w-full md:w-auto">
+<div class="font-display-hero text-headline-section-mobile text-primary dark:text-tertiary-fixed mb-4">
+                    BYTES Labs
+                </div>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container max-w-sm">
+                    © 2024 BYTES Labs. Engineering Excellence &amp; Editorial Luxury.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-6 w-full md:w-auto md:items-end">
+<ul class="flex flex-col md:flex-row gap-6">
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-200 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-200 hover:opacity-80 transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed transition-colors duration-200 hover:opacity-80 transition-opacity" href="#">Help Center</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

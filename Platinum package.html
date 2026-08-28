@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Platinum Package - BYTES Labs</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#1e262f",
+                    "on-background": "#1b1b1f",
+                    "on-secondary-container": "#666353",
+                    "primary-fixed-dim": "#b5c5fc",
+                    "on-primary-fixed-variant": "#354574",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed": "#e8e3cf",
+                    "on-primary-fixed": "#051846",
+                    "tertiary-fixed-dim": "#bfc7d4",
+                    "on-secondary-fixed": "#1d1c10",
+                    "secondary-container": "#e5e0cc",
+                    "inverse-primary": "#b5c5fc",
+                    "on-tertiary-fixed": "#141c25",
+                    "primary": "#000c33",
+                    "surface-container-low": "#f5f3f7",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#615f4f",
+                    "inverse-surface": "#303034",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1b1b1f",
+                    "surface": "#fbf8fd",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#dbe3f0",
+                    "surface-bright": "#fbf8fd",
+                    "outline-variant": "#c5c6d0",
+                    "surface-variant": "#e4e2e6",
+                    "tertiary": "#09111a",
+                    "outline": "#757680",
+                    "inverse-on-surface": "#f2f0f4",
+                    "surface-container-highest": "#e4e2e6",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#efedf2",
+                    "on-secondary-fixed-variant": "#494738",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4d5c8d",
+                    "background": "#fbf8fd",
+                    "on-primary-container": "#7b8abe",
+                    "on-surface-variant": "#45464f",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3f4752",
+                    "surface-container-high": "#e9e7ec",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#858d99",
+                    "secondary-fixed-dim": "#cbc7b3",
+                    "primary-container": "#112250",
+                    "surface-dim": "#dbd9de"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "96px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "section-gap-mobile": "64px",
+                    "margin": "24px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-section": ["Playfair Display"],
+                    "headline-section-mobile": ["Playfair Display"],
+                    "display-hero": ["Playfair Display"],
+                    "display-hero-mobile": ["Playfair Display"],
+                    "label-eyebrow": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-section": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "headline-section-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "display-hero": ["80px", {"lineHeight": "1.1", "fontWeight": "400"}],
+                    "display-hero-mobile": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "label-eyebrow": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Silk Gradient Backgrounds */
+        .bg-silk-gradient {
+            background: linear-gradient(135deg, rgba(251, 248, 253, 0) 0%, rgba(229, 224, 204, 0.15) 100%);
+        }
+        
+        .bg-silk-dark {
+            background: linear-gradient(135deg, var(--color-primary-container) 0%, var(--color-primary) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Navigation Shell (TopNavBar) -->
+<nav class="fixed top-4 left-0 right-0 z-50 transition-all duration-300" id="main-nav">
+<div class="mx-auto w-[95%] max-w-container-max rounded-full bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border border-outline/20 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-8 py-3 w-full">
+<!-- Brand -->
+<a class="font-display-hero text-body-lg font-bold text-primary tracking-tight" href="#">BYTES Labs</a>
+<!-- Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Work</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary font-semibold border-b border-primary" href="#">Pricing</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<!-- CTA -->
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-2.5 rounded-full font-body-md text-body-md font-medium hover:bg-primary-container hover:text-on-primary-container transition-all hover:scale-[1.02]" href="#">
+                    Hire Us
+                </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2 focus:outline-none">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-section-gap min-h-screen">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter pt-12 pb-section-gap-mobile md:pb-section-gap relative">
+<div class="mb-12">
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-label-eyebrow group" href="#">
+<span class="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">arrow_left_alt</span>
+                    Back to Pricing
+                </a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 space-y-8 relative z-10">
+<div class="space-y-4">
+<span class="inline-block px-4 py-1.5 rounded-full border border-primary/20 text-primary font-label-eyebrow tracking-widest bg-secondary-container/30 backdrop-blur-sm">
+                            THE PINNACLE TIER
+                        </span>
+<h1 class="font-display-hero-mobile md:font-display-hero text-primary text-display-hero-mobile md:text-display-hero tracking-tight">
+                            Platinum<br/>Package
+                        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl text-lg md:text-xl">
+                            Advanced. Cinematic. Polished. The ultimate expression of digital craft, designed for brands that demand absolute excellence.
+                        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-4 border-t border-outline/10">
+<div>
+<p class="font-label-eyebrow text-on-surface-variant mb-1">INVESTMENT</p>
+<p class="font-body-lg text-body-lg font-medium text-primary text-2xl">Starting from ₹5,000</p>
+</div>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-8 py-4 rounded-full font-body-md text-body-md font-medium hover:bg-primary-container hover:text-on-primary-container transition-all hover:scale-[1.02] gap-2 shadow-lg shadow-primary/10 w-full sm:w-auto" href="#book">
+                            Book Package
+                            <span class="material-symbols-outlined font-light text-xl">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 h-[60vh] lg:h-[70vh] w-full rounded-2xl overflow-hidden border border-outline/20 relative shadow-2xl shadow-primary/5 mt-12 lg:mt-0">
+<div class="bg-cover bg-center w-full h-full absolute inset-0" data-alt="A highly abstract and luxurious digital art composition representing the Platinum tier. Fluid, cinematic ribbons of deep navy blue and champagne gold intertwining in a vast, pristine white space. The lighting is soft and studio-like, emphasizing the smooth, premium texture of the abstract shapes. High-end editorial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsV60aVnavejyFpaUe5Z838DyoaWM_IHGtICVwf0NpakXMI21RNmv9pTLQ4L9jkqKCFm67cdvCh3wrOgZG3zdNVHjk9pYnmdrANcnCcVS44me0YK9wpjh_2sk2P6fvcwzC67sE9kwCsrrekSuza_xzdONFn4a3lPufC6g4Qtjx0v9GygFmR-czWqLifCD3Pw8uh99Y6mwh_43pVS53NKiAcUdEWwpbyZRcPwfp4tZ8dvQwhCkMneAV')"></div>
+<div class="absolute inset-0 bg-silk-gradient opacity-60"></div>
+</div>
+</div>
+</section>
+<!-- Overview & Details Bento Grid -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap border-t border-outline/10">
+<div class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-section-mobile md:font-headline-section text-primary text-headline-section-mobile md:text-headline-section mb-6">A Cinematic Experience</h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-lg">
+                    This is an overview of the high-end advanced digital experience. We leverage cutting-edge web technologies to create immersive, tactile environments that elevate your brand narrative.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-min">
+<!-- Who it's for -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline/20 p-8 hover:border-primary/40 hover:shadow-[0_4px_20px_rgba(0,12,51,0.05)] transition-all duration-300 md:col-span-1 md:row-span-2 flex flex-col group">
+<div class="h-12 w-12 rounded-full bg-secondary-container/50 flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">target</span>
+</div>
+<h3 class="font-headline-section-mobile text-primary text-2xl mb-4">Who it's for</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Brands wanting to push boundaries with cinematic visuals, technical excellence, and an uncompromising attention to editorial detail. Ideal for luxury goods, premium services, and high-end portfolios.
+                    </p>
+<div class="bg-cover bg-center w-full h-48 rounded-lg mt-auto border border-outline/10 filter grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A minimalist still life photograph conveying absolute precision and high-end craft. A sleek, modern geometric object resting on a pristine ivory marble surface. Subtle, directional lighting creates a soft shadow, highlighting the immaculate edges. Minimalist, premium, editorial luxury mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQJu8xuRRocWvsojF2Jh7DmCQR_dBsQuoOu1uag-CinkMLlx-J-tMbPuSTxbPu1oZLpnmVd6pVfDs7uLmLpZ6RM4FdYhy8n43pfTSHtpbTIHnOstKOFNU-T2aSma4H76TcUAnkhXKNXVKKYIzU4IHoJfPpbSM8hXtFrYNuk8Geq7e0rSaNUIEqrqYdnurzhmlDPJ0to3vQrd0EoSE5h_ley85uE0cfq-iIrI76faCHYKxPtiwLRj51')"></div>
+</div>
+<!-- What's included -->
+<div class="bg-primary text-on-primary rounded-xl p-8 shadow-xl md:col-span-2 relative overflow-hidden group">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
+<div class="relative z-10">
+<h3 class="font-headline-section-mobile text-on-primary text-2xl mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-inverse-primary">check_circle</span>
+                            What's Included
+                        </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 font-body-md text-body-md text-on-primary/80">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm mt-1 text-inverse-primary">commit</span>
+<div>
+<strong class="text-on-primary block mb-1">Expansive Architecture</strong>
+                                    Max 10 distinct webpages plus a fully bespoke homepage experience.
+                                </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm mt-1 text-inverse-primary">commit</span>
+<div>
+<strong class="text-on-primary block mb-1">WebGL Environments</strong>
+                                    Custom 3D scenes or advanced 2D shaders for immersive interactions.
+                                </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm mt-1 text-inverse-primary">commit</span>
+<div>
+<strong class="text-on-primary block mb-1">Custom Motion Design</strong>
+                                    Choreographed scroll events, page transitions, and micro-interactions.
+                                </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm mt-1 text-inverse-primary">commit</span>
+<div>
+<strong class="text-on-primary block mb-1">Premium Presentation</strong>
+                                    Bespoke editorial layouts, fluid typography scaling, and flawless responsive execution.
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Capabilities -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline/20 p-8 hover:border-primary/40 hover:shadow-[0_4px_20px_rgba(0,12,51,0.05)] transition-all duration-300 md:col-span-2 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<div class="h-12 w-12 rounded-full bg-secondary-container/50 flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<h3 class="font-headline-section-mobile text-primary text-2xl mb-4">Core Capabilities</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Beyond standard web design, the Platinum package utilizes advanced shader effects, depth-based interactions, and an ultra-premium aesthetic to craft digital spaces that feel physical.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-label-eyebrow text-on-surface-variant">WebGL</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-label-eyebrow text-on-surface-variant">Shaders</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-label-eyebrow text-on-surface-variant">Lenis Smooth Scroll</span>
+</div>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-lg overflow-hidden border border-outline/10 bg-surface-variant relative">
+<!-- Placeholder for abstract tech visual -->
+<div class="bg-cover bg-center w-full h-full absolute inset-0 mix-blend-multiply opacity-80" data-alt="A highly detailed close-up of a premium digital interface layout. Elegant, sharp typography interacting with smooth, glassy, champagne-colored structural elements against a deep navy background. Soft, diffused lighting creating a sense of depth and tactile reality. Architectural web design concept." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGWNOOy72uuVaWTTk7I_N9BivWTbtzHu8iTzkvruBx9hGEK8EcHfm1VimALBVrUmQncul6LJjZRgITJs5idPR0n-1HBXlk-42xD69Z8WYA9I_LGAF2pwSTCozzcH9J0iDOh9E3E3z3A6v_4oTDvRW7Pv8gOP8gdMRM17QfVTdrRH9rwEEDrIfDjJeUAXZWOuz8jSiuBA-oZS2MzPIDcTvA2JgrnqKXx76En_f69GmqbYkNDbLsEFuK')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap" id="book">
+<div class="bg-surface-container-lowest rounded-2xl border border-outline/20 p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-silk-gradient opacity-50 z-0"></div>
+<div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+<h2 class="font-headline-section-mobile md:font-headline-section text-primary text-headline-section-mobile md:text-headline-section mb-6">The pinnacle of digital craft.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 text-lg">
+                        Ready to establish an uncompromising digital presence? Secure your place in our production queue.
+                    </p>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-10 py-4 rounded-full font-body-md text-body-md font-medium hover:bg-primary-container hover:text-on-primary-container transition-all hover:scale-[1.02] gap-2 shadow-xl shadow-primary/10" href="#">
+                        Book Package
+                        <span class="material-symbols-outlined font-light text-xl">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-bright dark:bg-tertiary-container w-full pt-section-gap pb-12 border-t border-outline/10 dark:border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="space-y-4 max-w-sm">
+<div class="font-display-hero text-headline-section-mobile text-primary dark:text-tertiary-fixed font-bold tracking-tight">BYTES Labs</div>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container text-sm">
+                    © 2024 BYTES Labs. Engineering Excellence &amp; Editorial Luxury.
+                </p>
+</div>
+<div class="flex flex-wrap gap-6 md:gap-8">
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed hover:opacity-80 transition-opacity transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed hover:opacity-80 transition-opacity transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-on-tertiary-container hover:text-primary dark:hover:text-tertiary-fixed hover:opacity-80 transition-opacity transition-colors duration-200" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.querySelector('div').classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.querySelector('div').classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+    </script>
+</body></html>
