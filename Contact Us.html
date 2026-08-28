@@ -14,6 +14,61 @@
         .silk-gradient {
             background: linear-gradient(135deg, #000c33 0%, #112250 100%);
         }
+        /* =========================================
+   BYTES LABS — HOMEPAGE GRID BACKGROUND
+   ========================================= */
+
+:root {
+    --navy: #112250;
+    --sapphire: #3B507D;
+    --warm-taupe: #BEB7A7;
+    --champagne: #E7E2CE;
+    --ivory: #F5F4F0;
+}
+
+/* Grid canvas */
+/* =========================================
+   BYTES LABS — LIGHT PAGE BACKGROUND
+   ========================================= */
+
+.grid-background {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    /* Very light Champagne background */
+    background-color: #F0EDDF;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(245, 244, 240, 0.55) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(245, 244, 240, 0.55) 1px,
+            transparent 1px
+        );
+
+    background-size: 72px 72px;
+}
+
+.grid-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(59, 80, 125, 0.08),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -51,7 +106,7 @@
     "on-tertiary-fixed": "#112250",
     "on-tertiary-fixed-variant": "#3B507D",
 
-    "background": "#E7E2CE",
+    "background": "#F0EDDF",
     "on-background": "#112250",
 
     "surface": "#E7E2CE",
@@ -200,8 +255,11 @@
       </script>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden min-h-screen flex flex-col selection:bg-primary-fixed-dim selection:text-primary">
-<!-- TopNavBar (Shared Component Anchor) -->
-<header class="bg-surface-container-lowest/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b border-outline/10">
+<!-- BYTES Labs Homepage Grid Background -->
+<div class="grid-background" aria-hidden="true"></div>
+        
+ <!-- TopNavBar (Shared Component Anchor) -->
+<header class="relative z-10 bg-surface-container-lowest/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b border-outline/10">
 <nav class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
 <a class="font-headline-section-mobile text-headline-section-mobile font-bold text-primary tracking-tight" href="#">BYTES Labs</a>
 <div class="hidden md:flex items-center space-x-8">
@@ -220,7 +278,7 @@
 </nav>
 </header>
 <!-- Main Content Canvas -->
-<main class="flex-grow pt-[80px]">
+<main class="relative z-10 flex-grow pt-[80px]">
 <!-- Hero Section -->
 <div class="bg-primary-fixed/20 pt-24 pb-32 rounded-b-3xl mb-section-gap-mobile md:mb-section-gap relative">
 <section class="text-center max-w-3xl mx-auto px-gutter animate-fade-in">
@@ -278,7 +336,7 @@
 </div>
 </main>
 <!-- Footer (Shared Component Anchor) -->
-<footer class="bg-surface-container-lowest w-full py-16 border-t border-outline/10 mt-auto">
+<footer class="relative z-10 bg-surface-container-lowest w-full py-16 border-t border-outline/10 mt-auto">
 <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
 <div class="md:col-span-3 text-center md:text-left">
 <a class="font-headline-section-mobile text-headline-section-mobile text-primary font-bold tracking-tight inline-block" href="#">BYTES Labs</a>
