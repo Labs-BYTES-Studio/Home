@@ -43,8 +43,74 @@
             theme: {
                 extend: {
                     "colors": {
-                        "on-surface": "#1b1b1f", "primary": "#000c33", "on-tertiary-fixed": "#141c25", "primary-fixed": "#dbe1ff", "tertiary-fixed-dim": "#bfc7d4", "secondary-fixed": "#e8e3cf", "surface-dim": "#dbd9de", "primary-container": "#112250", "on-secondary-fixed": "#1d1c10", "primary-fixed-dim": "#b5c5fc", "outline-variant": "#c5c6d0", "secondary-container": "#e5e0cc", "secondary-fixed-dim": "#cbc7b3", "surface-container-low": "#f5f3f7", "background": "#fbf8fd", "surface-container-highest": "#e4e2e6", "on-background": "#1b1b1f", "on-error": "#ffffff", "surface-variant": "#e4e2e6", "inverse-surface": "#303034", "on-tertiary-container": "#858d99", "on-tertiary-fixed-variant": "#3f4752", "tertiary": "#09111a", "on-surface-variant": "#45464f", "outline": "#757680", "surface": "#fbf8fd", "surface-container-lowest": "#ffffff", "surface-bright": "#fbf8fd", "on-secondary": "#ffffff", "on-primary-container": "#7b8abe", "on-primary-fixed": "#051846", "surface-container": "#efedf2", "surface-container-high": "#e9e7ec", "tertiary-container": "#1e262f", "on-secondary-container": "#666353", "secondary": "#615f4f", "tertiary-fixed": "#dbe3f0", "error-container": "#ffdad6", "error": "#ba1a1a", "inverse-on-surface": "#f2f0f4", "surface-tint": "#4d5c8d", "on-primary": "#ffffff", "on-primary-fixed-variant": "#354574", "inverse-primary": "#b5c5fc", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#494738"
-                    },
+    "primary": "#112250",
+    "primary-container": "#112250",
+    "primary-fixed": "#E7E2CE",
+    "primary-fixed-dim": "#BEB7A7",
+
+    "on-primary": "#F5F4F0",
+    "on-primary-fixed": "#112250",
+    "on-primary-fixed-variant": "#3B507D",
+    "on-primary-container": "#E7E2CE",
+
+    "secondary": "#BEB7A7",
+    "secondary-container": "#E7E2CE",
+    "secondary-fixed": "#E7E2CE",
+    "secondary-fixed-dim": "#BEB7A7",
+
+    "on-secondary": "#112250",
+    "on-secondary-container": "#112250",
+    "on-secondary-fixed": "#112250",
+    "on-secondary-fixed-variant": "#3B507D",
+
+    "tertiary": "#3B507D",
+    "tertiary-container": "#112250",
+    "tertiary-fixed": "#E7E2CE",
+    "tertiary-fixed-dim": "#BEB7A7",
+
+    "on-tertiary": "#F5F4F0",
+    "on-tertiary-container": "#E7E2CE",
+    "on-tertiary-fixed": "#112250",
+    "on-tertiary-fixed-variant": "#3B507D",
+
+    "background": "#E7E2CE",
+    "on-background": "#112250",
+
+    "surface": "#E7E2CE",
+    "surface-bright": "#F5F4F0",
+    "surface-dim": "#BEB7A7",
+
+    "surface-container-lowest": "#F5F4F0",
+    "surface-container-low": "#E7E2CE",
+    "surface-container": "#E7E2CE",
+    "surface-container-high": "#BEB7A7",
+    "surface-container-highest": "#BEB7A7",
+
+    "surface-variant": "#BEB7A7",
+
+    "on-surface": "#112250",
+    "on-surface-variant": "#3B507D",
+
+    "outline": "#3B507D",
+    "outline-variant": "#BEB7A7",
+
+    "inverse-surface": "#112250",
+    "inverse-on-surface": "#F5F4F0",
+    "inverse-primary": "#E7E2CE",
+
+    "error": "#8B2E2E",
+    "error-container": "#E8CFC9",
+    "on-error": "#F5F4F0",
+    "on-error-container": "#8B2E2E",
+
+    "surface-tint": "#3B507D",
+
+    "sapphire": "#3B507D",
+    "navy": "#112250",
+    "warm-taupe": "#BEB7A7",
+    "champagne": "#E7E2CE",
+    "ivory": "#F5F4F0"
+},
                     "borderRadius": {
                         "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"
                     },
@@ -56,9 +122,18 @@
         }
     </script>
 </head>
-<body class="bg-background text-on-surface antialiased">
+<body class="bg-background text-on-surface antialiased" style="
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(59, 80, 125, 0.14),
+            transparent 42%
+        ),
+        #E7E2CE;
+    color: #112250;
+">
 <!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-surface-tint/20">
+<header class="fixed top-0 left-0 w-full z-50 bg-ivory/85 backdrop-blur-md border-b border-navy/10">
 <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-24">
 <a class="font-headline-section-mobile text-headline-section-mobile font-bold text-primary flex items-center gap-2" href="#">
                 BYTES Labs
@@ -88,13 +163,13 @@
             </div>
 </header>
 <!-- Intro -->
-<section class="mb-12 font-body-lg text-body-lg text-on-surface">
+<section class="bg-ivory/70 backdrop-blur-md p-8 rounded-xl border border-navy/10 shadow-sm">
 <p>This document establishes the binding terms of engagement for all digital engineering, website development, and interface design projects executed by BYTES Labs. By initiating a project or remitting payment, you explicitly acknowledge and consent to the operational parameters detailed herein. Our methodology is built on technical precision, and these terms ensure mutual clarity throughout the development lifecycle.</p>
 </section>
 <!-- Sections -->
 <div class="space-y-12">
 <!-- Financial Protocol -->
-<section class="bg-surface-container-lowest p-8 rounded-lg border border-surface-tint/30 shadow-sm">
+<section class="bg-ivory/70 backdrop-blur-md p-8 rounded-xl border border-navy/10 shadow-sm">
 <h2 class="font-headline-section-mobile text-[24px] text-primary mb-6 flex items-center gap-3">
 <span class="material-symbols-outlined text-surface-tint">account_balance</span>
                     Financial Protocol
@@ -115,7 +190,7 @@
 </ul>
 </section>
 <!-- Scope Architecture & Packages -->
-<section class="bg-surface-container-lowest p-8 rounded-lg border border-surface-tint/30 shadow-sm">
+<section class="bg-ivory/70 backdrop-blur-md p-8 rounded-xl border border-navy/10 shadow-sm">
 <h2 class="font-headline-section-mobile text-[24px] text-primary mb-6 flex items-center gap-3">
 <span class="material-symbols-outlined text-surface-tint">architecture</span>
                     Scope Architecture &amp; Packages
@@ -138,7 +213,7 @@
 </div>
 </section>
 <!-- Revisions & Iterations -->
-<section class="bg-surface-container-lowest p-8 rounded-lg border border-surface-tint/30 shadow-sm">
+<section class="bg-ivory/70 backdrop-blur-md p-8 rounded-xl border border-navy/10 shadow-sm">
 <h2 class="font-headline-section-mobile text-[24px] text-primary mb-4 flex items-center gap-3">
 <span class="material-symbols-outlined text-surface-tint">update</span>
                     Revisions &amp; Iterations
@@ -146,7 +221,7 @@
 <p class="font-body-md text-body-md text-on-surface">Standard engagements include two rounds of minor revisions (typographical, minor color shifts, basic layout adjustments) post-staging. Fundamental structural changes or scope deviations requested after initial approval will be scoped and billed separately.</p>
 </section>
 <!-- Agreement Acknowledgment -->
-<section class="bg-surface-container-lowest p-8 rounded-lg border border-surface-tint/30 shadow-sm flex items-start gap-4">
+<section class="bg-ivory/70 backdrop-blur-md p-8 rounded-xl border border-navy/10 shadow-sm flex items-start gap-4">
 <span class="material-symbols-outlined text-[32px] text-surface-tint">verified_user</span>
 <div>
 <h2 class="font-headline-section-mobile text-[24px] text-primary mb-2">Agreement Acknowledgment</h2>
@@ -156,7 +231,7 @@
 </div>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-lowest py-section-gap border-t border-surface-tint/20 w-full">
+<footer class="bg-champagne py-section-gap border-t border-navy/10 w-full">
 <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 <div class="font-headline-section-mobile text-headline-section-mobile text-primary">
                 BYTES Labs
@@ -167,7 +242,7 @@
 <a class="hover:text-surface-tint transition-colors" href="#">Cookie Policy</a>
 <a class="hover:text-surface-tint transition-colors" href="#">Security</a>
 </div>
-<div class="col-span-1 md:col-span-2 text-center mt-8 font-body-md text-body-md text-surface-tint">
+<div class="col-span-1 md:col-span-2 text-center mt-8 font-body-md text-body-md text-sapphire">
                 © 2024 BYTES Labs. All rights reserved. Crafted for technical precision.
             </div>
 </div>
