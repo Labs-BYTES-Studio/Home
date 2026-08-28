@@ -263,15 +263,17 @@ main > section {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+}
 
+/* Only these sections get the outer Ivory card */
+main > section:nth-child(2),
+main > section:nth-child(3),
+main > section:nth-child(4),
+main > section:nth-child(5) {
     background: var(--ivory) !important;
-
     border: 1px solid rgba(190, 183, 167, 0.65);
     border-radius: 28px;
-
-    box-shadow:
-        0 12px 40px rgba(17, 34, 80, 0.08);
-
+    box-shadow: 0 12px 40px rgba(17, 34, 80, 0.08);
     overflow: hidden;
 }
 
