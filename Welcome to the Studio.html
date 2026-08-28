@@ -374,8 +374,8 @@ footer {
     opacity: 0;
     transform: translateY(32px);
     transition:
-        opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        opacity 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .animate-on-scroll.is-visible {
@@ -386,14 +386,14 @@ footer {
 /* Hero entrance animation */
 .hero-entrance {
     opacity: 0;
-    transform: translateY(24px);
-    animation: heroFadeIn 1s ease-out 0.15s forwards;
+    transform: translateY(40px);
+    animation: heroFadeIn 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
 }
 
 @keyframes heroFadeIn {
     from {
         opacity: 0;
-        transform: translateY(24px);
+        transform: translateY(40px);
     }
 
     to {
