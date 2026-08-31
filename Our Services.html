@@ -16,57 +16,73 @@
             theme: {
                 extend: {
                     "colors": {
-                        "primary": "#000c33",
-                        "on-tertiary-fixed": "#141c25",
-                        "on-surface-variant": "#45464f",
-                        "on-tertiary": "#ffffff",
-                        "secondary": "#615f4f",
-                        "primary-fixed": "#dbe1ff",
-                        "inverse-surface": "#303034",
-                        "surface-container-high": "#e9e7ec",
-                        "inverse-primary": "#b5c5fc",
-                        "error": "#ba1a1a",
-                        "surface-container-lowest": "#ffffff",
-                        "on-tertiary-fixed-variant": "#3f4752",
-                        "outline": "#757680",
-                        "on-surface": "#1b1b1f",
-                        "on-error-container": "#93000a",
-                        "surface-tint": "#4d5c8d",
-                        "secondary-container": "#e5e0cc",
-                        "tertiary-container": "#1e262f",
-                        "tertiary": "#09111a",
-                        "surface-container-highest": "#e4e2e6",
-                        "surface-variant": "#e4e2e6",
-                        "surface-container": "#efedf2",
-                        "secondary-fixed": "#e8e3cf",
-                        "background": "#fbf8fd",
-                        "on-secondary-fixed-variant": "#494738",
-                        "on-primary-fixed": "#051846",
-                        "error-container": "#ffdad6",
-                        "tertiary-fixed-dim": "#bfc7d4",
-                        "surface-bright": "#fbf8fd",
-                        "surface-container-low": "#f5f3f7",
-                        "on-primary-container": "#7b8abe",
-                        "secondary-fixed-dim": "#cbc7b3",
-                        "on-primary-fixed-variant": "#354574",
-                        "tertiary-fixed": "#dbe3f0",
-                        "inverse-on-surface": "#f2f0f4",
-                        "surface": "#fbf8fd",
-                        "on-secondary-fixed": "#1d1c10",
-                        "surface-dim": "#dbd9de",
-                        "on-tertiary-container": "#858d99",
-                        "on-error": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "on-background": "#1b1b1f",
-                        "outline-variant": "#c5c6d0",
-                        "on-secondary-container": "#666353",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#b5c5fc",
-                        "primary-container": "#112250",
-                        "sapphire": "#3B507D",
-                        "navy": "#000c33",
-                        "ivory": "#fbf8fd"
-                    },
+    /* Core BYTES Labs palette */
+    "primary": "#112250",
+    "navy": "#112250",
+    "sapphire": "#3B507D",
+    "warm-taupe": "#BEB7A7",
+    "champagne": "#E7E2CE",
+    "ivory": "#F5F4F0",
+
+    /* Text */
+    "on-primary": "#F5F4F0",
+    "on-surface": "#112250",
+    "on-surface-variant": "#3B507D",
+    "on-background": "#112250",
+
+    /* Surfaces */
+    "background": "#F5F4F0",
+    "surface": "#F5F4F0",
+    "surface-bright": "#F5F4F0",
+    "surface-container-lowest": "#F5F4F0",
+    "surface-container-low": "#E7E2CE",
+    "surface-container": "#E7E2CE",
+    "surface-container-high": "#BEB7A7",
+    "surface-container-highest": "#BEB7A7",
+    "surface-variant": "#E7E2CE",
+
+    /* Secondary / accents */
+    "secondary": "#3B507D",
+    "secondary-container": "#E7E2CE",
+    "on-secondary": "#112250",
+    "on-secondary-container": "#112250",
+    "secondary-fixed": "#E7E2CE",
+    "secondary-fixed-dim": "#BEB7A7",
+
+    /* Primary variants */
+    "primary-container": "#112250",
+    "primary-fixed": "#E7E2CE",
+    "primary-fixed-dim": "#BEB7A7",
+    "on-primary-container": "#3B507D",
+    "on-primary-fixed": "#112250",
+    "on-primary-fixed-variant": "#3B507D",
+
+    /* Borders / outlines */
+    "outline": "#BEB7A7",
+    "outline-variant": "#BEB7A7",
+
+    /* Supporting tokens */
+    "surface-tint": "#3B507D",
+    "inverse-surface": "#112250",
+    "inverse-primary": "#E7E2CE",
+    "inverse-on-surface": "#F5F4F0",
+
+    /* Keep these available for existing components */
+    "tertiary": "#112250",
+    "tertiary-container": "#3B507D",
+    "tertiary-fixed": "#E7E2CE",
+    "tertiary-fixed-dim": "#BEB7A7",
+    "on-tertiary": "#F5F4F0",
+    "on-tertiary-fixed": "#112250",
+    "on-tertiary-fixed-variant": "#3B507D",
+    "on-tertiary-container": "#F5F4F0",
+
+    /* Error states */
+    "error": "#8A2635",
+    "error-container": "#E8C9C7",
+    "on-error": "#F5F4F0",
+    "on-error-container": "#112250"
+}
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
                         "lg": "0.5rem",
@@ -119,23 +135,35 @@
             direction: ltr;
         }
         .silk-gradient {
-            background: linear-gradient(135deg, rgba(239, 237, 242, 0.4) 0%, rgba(181, 197, 252, 0.2) 100%);
-        }
-        .sapphire-navy-gradient {
-            background: linear-gradient(135deg, #3B507D 0%, #000c33 100%);
-        }
+    background: linear-gradient(
+        135deg,
+        #F5F4F0 0%,
+        #E7E2CE 55%,
+        #BEB7A7 100%
+    );
+}
+
+.sapphire-navy-gradient {
+    background: linear-gradient(
+        135deg,
+        #3B507D 0%,
+        #112250 100%
+    );
+}
         .glass-overlay {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(245, 244, 240, 0.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(245, 244, 240, 0.14);
         }
+        
         .card-border {
-            border: 1px solid rgba(117, 118, 128, 0.2);
-        }
-        .card-hover:hover {
-            border-color: rgba(117, 118, 128, 0.5);
-            box-shadow: 0 4px 20px rgba(0, 12, 51, 0.05);
-        }
+    border: 1px solid rgba(190, 183, 167, 0.35);
+}
+
+.card-hover:hover {
+    border-color: rgba(59, 80, 125, 0.45);
+    box-shadow: 0 4px 20px rgba(17, 34, 80, 0.08);
+}
         
         .fade-up {
             opacity: 0;
