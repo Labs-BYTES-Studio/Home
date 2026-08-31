@@ -83,72 +83,374 @@
                         "margin": "24px"
                     },
                     "fontFamily": {
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "headline-section": ["Playfair Display"],
-                        "label-eyebrow": ["Plus Jakarta Sans"],
-                        "headline-section-mobile": ["Playfair Display"],
-                        "display-hero": ["Playfair Display"],
-                        "display-hero-mobile": ["Playfair Display"],
-                        "body-md": ["Plus Jakarta Sans"]
-                    },
+    "body-lg": [
+        "Plus Jakarta Sans"
+    ],
+    "headline-section": [
+        "Playfair Display"
+    ],
+    "label-eyebrow": [
+        "Plus Jakarta Sans"
+    ],
+    "headline-section-mobile": [
+        "Playfair Display"
+    ],
+    "display-hero": [
+        "Playfair Display"
+    ],
+    "display-hero-mobile": [
+        "Playfair Display"
+    ],
+    "body-md": [
+        "Plus Jakarta Sans"
+    ]
+},
                     "fontSize": {
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-section": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "label-eyebrow": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-section-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
-                        "display-hero": ["80px", { "lineHeight": "1.1", "fontWeight": "400" }],
-                        "display-hero-mobile": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+    "body-lg": [
+        "18px",
+        {
+            "lineHeight": "1.6",
+            "fontWeight": "400"
+        }
+    ],
+    "headline-section": [
+        "48px",
+        {
+            "lineHeight": "1.2",
+            "fontWeight": "400"
+        }
+    ],
+    "label-eyebrow": [
+        "13px",
+        {
+            "lineHeight": "1",
+            "letterSpacing": "0.05em",
+            "fontWeight": "600"
+        }
+    ],
+    "headline-section-mobile": [
+        "32px",
+        {
+            "lineHeight": "1.3",
+            "fontWeight": "400"
+        }
+    ],
+    "display-hero": [
+        "80px",
+        {
+            "lineHeight": "1.1",
+            "fontWeight": "400"
+        }
+    ],
+    "display-hero-mobile": [
+        "48px",
+        {
+            "lineHeight": "1.2",
+            "fontWeight": "400"
+        }
+    ],
+    "body-md": [
+        "16px",
+        {
+            "lineHeight": "1.6",
+            "fontWeight": "400"
+        }
+    ]
                     }
                 }
             }
         }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-family: 'Material Symbols Outlined';
-            font-weight: 200;
-            font-style: normal;
-            font-size: 24px;
-            display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-        }
-        .silk-gradient {
-            background: linear-gradient(135deg, rgba(239, 237, 242, 0.4) 0%, rgba(181, 197, 252, 0.2) 100%);
-        }
-        .sapphire-navy-gradient {
-            background: linear-gradient(135deg, #3B507D 0%, #000c33 100%);
-        }
-        .glass-overlay {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .card-border {
-            border: 1px solid rgba(117, 118, 128, 0.2);
-        }
-        .card-hover:hover {
-            border-color: rgba(117, 118, 128, 0.5);
-            box-shadow: 0 4px 20px rgba(0, 12, 51, 0.05);
-        }
-        
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .fade-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+/* =========================================
+   BYTES LABS — OFFICIAL COLOR SYSTEM
+   ========================================= */
+
+:root {
+    --navy: #112250;
+    --sapphire: #3B507D;
+    --warm-taupe: #BEB7A7;
+    --champagne: #E7E2CE;
+    --ivory: #F5F4F0;
+}
+
+/* =========================================
+   MAIN PAGE BACKGROUND
+   ========================================= */
+
+body {
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(59, 80, 125, 0.14),
+            transparent 42%
+        ),
+        var(--champagne);
+
+    color: var(--navy);
+}
+
+/* =========================================
+   GRID BACKGROUND
+   ========================================= */
+
+.grid-wrapper {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: var(--champagne);
+}
+
+.grid-background {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(190, 183, 167, 0.45) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(190, 183, 167, 0.45) 1px,
+            transparent 1px
+        );
+
+    background-size: 20px 30px;
+
+    -webkit-mask-image:
+        radial-gradient(
+            ellipse 70% 60% at 50% 0%,
+            #000 0%,
+            transparent 100%
+        );
+
+    mask-image:
+        radial-gradient(
+            ellipse 70% 60% at 50% 0%,
+            #000 0%,
+            transparent 100%
+        );
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+header {
+    background: rgba(245, 244, 240, 0.78) !important;
+    border-color: rgba(17, 34, 80, 0.10) !important;
+}
+
+/* =========================================
+   IVORY SURFACES
+   ========================================= */
+
+.bg-white {
+    background-color: var(--ivory) !important;
+}
+
+.bg-white\/90 {
+    background-color: rgba(245, 244, 240, 0.92) !important;
+}
+
+.bg-white\/80 {
+    background-color: rgba(245, 244, 240, 0.82) !important;
+}
+
+.bg-white\/70 {
+    background-color: rgba(245, 244, 240, 0.72) !important;
+}
+
+.bg-white\/60 {
+    background-color: rgba(245, 244, 240, 0.62) !important;
+}
+
+.bg-white\/50 {
+    background-color: rgba(245, 244, 240, 0.52) !important;
+}
+
+/* =========================================
+   PALETTE TEXT COLORS
+   ========================================= */
+
+.text-primary {
+    color: var(--navy) !important;
+}
+
+.text-on-surface {
+    color: var(--navy) !important;
+}
+
+.text-on-surface-variant {
+    color: var(--sapphire) !important;
+}
+
+.text-surface-tint {
+    color: var(--sapphire) !important;
+}
+
+.text-navy {
+    color: var(--navy) !important;
+}
+
+.text-sapphire {
+    color: var(--sapphire) !important;
+}
+
+/* =========================================
+   PALETTE BACKGROUNDS
+   ========================================= */
+
+.bg-primary {
+    background-color: var(--navy) !important;
+}
+
+.bg-navy {
+    background-color: var(--navy) !important;
+}
+
+.bg-sapphire {
+    background-color: var(--sapphire) !important;
+}
+
+.bg-champagne {
+    background-color: var(--champagne) !important;
+}
+
+.bg-ivory {
+    background-color: var(--ivory) !important;
+}
+
+.bg-warm-taupe {
+    background-color: var(--warm-taupe) !important;
+}
+
+/* =========================================
+   TRANSLUCENT CHAMPAGNE / IVORY SURFACES
+   ========================================= */
+
+.bg-champagne\/70 {
+    background-color: rgba(231, 226, 206, 0.70) !important;
+}
+
+.bg-ivory\/70 {
+    background-color: rgba(245, 244, 240, 0.70) !important;
+}
+
+.bg-ivory\/80 {
+    background-color: rgba(245, 244, 240, 0.80) !important;
+}
+
+.bg-ivory\/85 {
+    background-color: rgba(245, 244, 240, 0.85) !important;
+}
+
+/* =========================================
+   BORDERS
+   ========================================= */
+
+.border-warm-taupe\/30 {
+    border-color: rgba(190, 183, 167, 0.30) !important;
+}
+
+.border-warm-taupe\/40 {
+    border-color: rgba(190, 183, 167, 0.40) !important;
+}
+
+.border-warm-taupe\/50 {
+    border-color: rgba(190, 183, 167, 0.50) !important;
+}
+
+.border-white\/20 {
+    border-color: rgba(245, 244, 240, 0.22) !important;
+}
+
+.border-white\/40 {
+    border-color: rgba(190, 183, 167, 0.55) !important;
+}
+
+.border-white\/50 {
+    border-color: rgba(190, 183, 167, 0.65) !important;
+}
+
+.border-navy\/10 {
+    border-color: rgba(17, 34, 80, 0.10) !important;
+}
+
+.border-navy\/20 {
+    border-color: rgba(17, 34, 80, 0.20) !important;
+}
+
+/* =========================================
+   NAVY → SAPPHIRE GRADIENT
+   ========================================= */
+
+.silk-gradient {
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(59, 80, 125, 0.65),
+            transparent 42%
+        ),
+        linear-gradient(
+            135deg,
+            #112250 0%,
+            #3B507D 55%,
+            #112250 100%
+        );
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.bg-navy:hover {
+    background-color: var(--sapphire) !important;
+}
+
+.bg-primary:hover {
+    background-color: var(--sapphire) !important;
+}
+
+/* =========================================
+   SOFT NAVY / SAPPHIRE DEPTH
+   ========================================= */
+
+.navy-glow {
+    box-shadow:
+        0 20px 60px rgba(17, 34, 80, 0.16),
+        0 4px 20px rgba(59, 80, 125, 0.10);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: var(--ivory) !important;
+    border-color: rgba(190, 183, 167, 0.30) !important;
+}
+
+/* =========================================
+   SELECTION
+   ========================================= */
+
+::selection {
+    background: var(--navy);
+    color: var(--ivory);
+}
+</style>
 </head>
-<body class="bg-ivory text-on-surface font-body-md antialiased min-h-screen flex flex-col pt-[88px]">
+<body class="bg-champagne text-navy font-body-md antialiased">
+<div class="grid-wrapper">
+
+    <div class="grid-background"></div>
+
+    <div class="relative z-10">
 <!-- TopNavBar Standardized -->
 <header class="fixed top-0 w-full z-50 bg-ivory/90 backdrop-blur-md border-b border-outline-variant/20 shadow-sm transition-all duration-300">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin py-4">
@@ -295,7 +597,7 @@
 </section>
 </main>
 <!-- Footer Standardized -->
-<footer class="w-full py-section-gap bg-ivory border-t border-outline-variant/20 fade-up">
+<footer class="w-full py-section-gap bg-ivory border-t border-warm-taupe/30">
 <div class="max-w-container-max mx-auto px-margin flex flex-col md:flex-row justify-between items-center gap-gutter">
 <div class="font-display-hero text-headline-section text-navy tracking-tight">
             BYTES Labs
@@ -311,6 +613,8 @@
         </div>
 </div>
 </footer>
+                </div>
+</div>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const observer = new IntersectionObserver((entries) => {
