@@ -10,115 +10,101 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
         <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-    /* Core BYTES Labs palette */
-    "primary": "#112250",
-    "navy": "#112250",
-    "sapphire": "#3B507D",
-    "warm-taupe": "#BEB7A7",
-    "champagne": "#E7E2CE",
-    "ivory": "#F5F4F0",
-
-    /* Text */
-    "on-primary": "#F5F4F0",
-    "on-surface": "#112250",
-    "on-surface-variant": "#3B507D",
-    "on-background": "#112250",
-
-    /* Surfaces */
-    "background": "#F5F4F0",
-    "surface": "#F5F4F0",
-    "surface-bright": "#F5F4F0",
-    "surface-container-lowest": "#F5F4F0",
-    "surface-container-low": "#E7E2CE",
-    "surface-container": "#E7E2CE",
-    "surface-container-high": "#BEB7A7",
-    "surface-container-highest": "#BEB7A7",
-    "surface-variant": "#E7E2CE",
-
-    /* Secondary / accents */
-    "secondary": "#3B507D",
-    "secondary-container": "#E7E2CE",
-    "on-secondary": "#112250",
-    "on-secondary-container": "#112250",
-    "secondary-fixed": "#E7E2CE",
-    "secondary-fixed-dim": "#BEB7A7",
-
-    /* Primary variants */
-    "primary-container": "#112250",
-    "primary-fixed": "#E7E2CE",
-    "primary-fixed-dim": "#BEB7A7",
-    "on-primary-container": "#3B507D",
-    "on-primary-fixed": "#112250",
-    "on-primary-fixed-variant": "#3B507D",
-
-    /* Borders / outlines */
-    "outline": "#BEB7A7",
-    "outline-variant": "#BEB7A7",
-
-    /* Supporting tokens */
-    "surface-tint": "#3B507D",
-    "inverse-surface": "#112250",
-    "inverse-primary": "#E7E2CE",
-    "inverse-on-surface": "#F5F4F0",
-
-    /* Keep these available for existing components */
-    "tertiary": "#112250",
-    "tertiary-container": "#3B507D",
-    "tertiary-fixed": "#E7E2CE",
-    "tertiary-fixed-dim": "#BEB7A7",
-    "on-tertiary": "#F5F4F0",
-    "on-tertiary-fixed": "#112250",
-    "on-tertiary-fixed-variant": "#3B507D",
-    "on-tertiary-container": "#F5F4F0",
-
-    /* Error states */
-    "error": "#8A2635",
-    "error-container": "#E8C9C7",
-    "on-error": "#F5F4F0",
-    "on-error-container": "#112250"
-}
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px",
-                        "2xl": "1rem",
-                        "3xl": "1.5rem"
-                    },
-                    "spacing": {
-                        "container-max": "1280px",
-                        "section-gap": "96px",
-                        "gutter": "24px",
-                        "section-gap-mobile": "64px",
-                        "margin": "24px"
-                    },
-                    "fontFamily": {
-    "body-lg": ["Plus Jakarta Sans"],
-    "headline-section": ["Playfair Display"],
-    "label-eyebrow": ["Plus Jakarta Sans"],
-    "headline-section-mobile": ["Playfair Display"],
-    "display-hero": ["Playfair Display"],
-    "display-hero-mobile": ["Playfair Display"],
-    "body-md": ["Plus Jakarta Sans"]
-                    }
-                    "fontSize": {
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-section": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "label-eyebrow": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-section-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
-                        "display-hero": ["80px", { "lineHeight": "1.1", "fontWeight": "400" }],
-                        "display-hero-mobile": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
-                    }
-                }
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "primary": "#112250",
+                "on-tertiary-fixed": "#112250",
+                "on-surface-variant": "#3B507D",
+                "on-tertiary": "#F5F4F0",
+                "secondary": "#3B507D",
+                "primary-fixed": "#E7E2CE",
+                "inverse-surface": "#112250",
+                "surface-container-high": "#BEB7A7",
+                "inverse-primary": "#E7E2CE",
+                "error": "#8A2635",
+                "surface-container-lowest": "#F5F4F0",
+                "on-tertiary-fixed-variant": "#3B507D",
+                "outline": "#BEB7A7",
+                "on-surface": "#112250",
+                "on-error-container": "#112250",
+                "surface-tint": "#3B507D",
+                "secondary-container": "#E7E2CE",
+                "tertiary-container": "#3B507D",
+                "tertiary": "#112250",
+                "surface-container-highest": "#BEB7A7",
+                "surface-variant": "#E7E2CE",
+                "surface-container": "#E7E2CE",
+                "secondary-fixed": "#E7E2CE",
+                "background": "#F5F4F0",
+                "on-secondary-fixed-variant": "#3B507D",
+                "on-primary-fixed": "#112250",
+                "error-container": "#E8C9C7",
+                "tertiary-fixed-dim": "#BEB7A7",
+                "surface-bright": "#F5F4F0",
+                "surface-container-low": "#E7E2CE",
+                "on-primary-container": "#3B507D",
+                "secondary-fixed-dim": "#BEB7A7",
+                "on-primary-fixed-variant": "#3B507D",
+                "tertiary-fixed": "#E7E2CE",
+                "inverse-on-surface": "#F5F4F0",
+                "surface": "#F5F4F0",
+                "on-secondary-fixed": "#112250",
+                "surface-dim": "#BEB7A7",
+                "on-tertiary-container": "#F5F4F0",
+                "on-error": "#F5F4F0",
+                "on-secondary": "#112250",
+                "on-background": "#112250",
+                "outline-variant": "#BEB7A7",
+                "on-secondary-container": "#112250",
+                "on-primary": "#F5F4F0",
+                "primary-fixed-dim": "#BEB7A7",
+                "primary-container": "#112250",
+                "sapphire": "#3B507D",
+                "navy": "#112250",
+                "ivory": "#F5F4F0",
+                "warm-taupe": "#BEB7A7",
+                "champagne": "#E7E2CE"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px",
+                "2xl": "1rem",
+                "3xl": "1.5rem"
+            },
+            "spacing": {
+                "container-max": "1280px",
+                "section-gap": "96px",
+                "gutter": "24px",
+                "section-gap-mobile": "64px",
+                "margin": "24px"
+            },
+            "fontFamily": {
+                "body-lg": ["Plus Jakarta Sans"],
+                "headline-section": ["Playfair Display"],
+                "label-eyebrow": ["Plus Jakarta Sans"],
+                "headline-section-mobile": ["Playfair Display"],
+                "display-hero": ["Playfair Display"],
+                "display-hero-mobile": ["Playfair Display"],
+                "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-section": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "label-eyebrow": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                "headline-section-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                "display-hero": ["80px", { "lineHeight": "1.1", "fontWeight": "400" }],
+                "display-hero-mobile": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
             }
         }
-    </script>
+    }
+}
+        </script>
 <style>
         .material-symbols-outlined {
             font-family: 'Material Symbols Outlined';
